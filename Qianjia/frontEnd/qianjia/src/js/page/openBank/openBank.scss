@@ -1,0 +1,56 @@
+.openBank{
+    background: #fff;
+  }
+.openBank{
+  .bankImg{
+    width: 750px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .inputItem{
+    border-bottom: 2px solid #eee;
+  }
+  .label{
+    width: 30%;
+    font-size: 30px;
+  }
+  .prompt{
+    font-size:20px;
+    color:#999;
+    padding-left: 30px;
+    padding-top:20px;
+  }
+  .flex-child1{
+    font-size: 28px;
+  }
+  .clause{
+    display: flex;
+    padding:30px;
+    font-size:20px;
+    color:#999;
+        input{
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-bottom: -5px;
+            margin-right: 20px;
+        }
+        .clauseText{
+            flex:2;
+            line-height: 35px;
+            font-size:20px;
+            a{
+              font-size:20px;
+            }
+        }
+  }
+  .bnt-ccc {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    color: white;
+    font-size: 0.3rem;
+    text-align: center;
+    background: #ccc;
+    border-radius: 0.5rem;
+  }
+}

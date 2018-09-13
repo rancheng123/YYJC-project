@@ -1,0 +1,43 @@
+@rem:40rem;
+body,ul,ol,li,table,th,td{
+    margin: 0px;
+    padding: 0px;
+}
+.rule-wrap{
+    padding: 40/@rem 20/@rem;
+    font-size: 24/@rem;
+    color: #3d4145;
+    .color-red{
+        color: red;
+    }
+    .rule-list{
+        list-style: none;
+        li{
+            padding: 10/@rem;
+            line-height: 40/@rem;
+        }
+    }
+    .rule-table{
+        width: 100%;
+        margin-top: 20/@rem;
+        border: 2.5/@rem solid #ccc;
+        border-collapse: collapse;
+        font-size: 24/@rem;
+        th{
+            width: 25%;
+            border: 2.5/@rem solid #ccc;
+            padding:10/@rem 0/@rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        th:first-child{
+
+        }
+        td{
+            height: 40/@rem;
+            padding:10/@rem 0/@rem;
+            border: 2.5/@rem solid #ccc;
+            text-align: center;
+        }
+    }
+}

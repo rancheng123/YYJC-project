@@ -1,0 +1,45 @@
+body,
+ul,
+ol,
+li,
+table,
+th,
+td {
+  margin: 0px;
+  padding: 0px;
+}
+.rule-wrap {
+  padding: 1rem 0.5rem;
+  font-size: 0.6rem;
+  color: #3d4145;
+}
+.rule-wrap .color-red {
+  color: red;
+}
+.rule-wrap .rule-list {
+  list-style: none;
+}
+.rule-wrap .rule-list li {
+  padding: 0.25rem;
+  line-height: 1rem;
+}
+.rule-wrap .rule-table {
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 0.0625rem solid #cccccc;
+  border-collapse: collapse;
+  font-size: 0.6rem;
+}
+.rule-wrap .rule-table th {
+  width: 25%;
+  border: 0.0625rem solid #cccccc;
+  padding: 0.25rem 0rem;
+  font-weight: bold;
+  text-align: center;
+}
+.rule-wrap .rule-table td {
+  height: 1rem;
+  padding: 0.25rem 0rem;
+  border: 0.0625rem solid #cccccc;
+  text-align: center;
+}

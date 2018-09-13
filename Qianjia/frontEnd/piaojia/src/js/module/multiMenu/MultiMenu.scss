@@ -1,0 +1,55 @@
+.multiMenu{
+  width:200px;
+  *{
+    margin:0px;
+    padding:0px;
+    font-size:16px;
+  }
+  ul,li{list-style: none;}
+  a{
+    color: #333;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  li:hover,
+  .active{
+    background: #f2dede;
+  }
+
+  ul{
+    width:200px;
+  }
+
+  li{
+    padding: 5px;
+    line-height:60px;
+    position: relative;
+  }
+  a{
+    display: block;
+
+  }
+
+  .multi-first-list{
+    background: #2b542c;
+  }
+  .multi-first-list ul{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+  }
+  .multi-first-list > li{
+    background: #adadad;
+  }
+
+  .multi-second-list > li{
+    background: #9d9d9d;
+  }
+  .multi-third-list > li{
+    background: #8c8c8c;
+  }
+
+  .sub-menu{
+    display: none;
+  }
+}

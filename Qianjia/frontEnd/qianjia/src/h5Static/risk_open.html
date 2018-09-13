@@ -1,0 +1,127 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>风险测评</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/zepto.min.js"></script>
+    
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+	<style>
+		html,body{
+            padding: 0;
+            margin:0;
+			height:100%;
+			width:100%;
+            font-size:20px !important;
+		}
+		.content{
+			min-height:100%;
+			width:100%;
+			background:url(/h5Static/images/wqdc_bg.png)no-repeat center;
+            border-top: 1px solid #e75135;
+		}
+		.open{
+			width:18.1rem;/*  */
+            height: 20.95rem;
+			background:url(/h5Static/images/wqdc_list.png)no-repeat;
+			background-size: 100% 100%;
+			margin-top:3rem;
+			border-top:1px solid #e75135;
+            margin:2.8rem auto;
+		}
+		.introduce{
+            width: 14rem;
+            font-size: 2rem;
+            margin: 9rem auto 0;
+		}
+        .introduce h4{
+            padding-bottom: 0.375rem;
+            font-size: 0.85rem
+        }
+		.introduce p{
+			font-size: 0.75rem;
+		}
+		.btn_open{
+			/* position: fixed; */
+            height: 2rem;
+            line-height: 2rem;
+            width: 6.25rem;
+            text-align: center;
+            /* bottom: 50px; */
+            margin: 0 auto;
+            margin-top: 1rem;
+            background: #fbc527;
+            color: #fff;
+            font-size: 0.75rem;
+            border-radius: 1.5rem;
+
+		}
+	</style>
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page" style="background:#ebebeb;">
+    	<!--<c:if test="${isWap=='YES'}">-->
+             <header class="bar bar-nav isWap" style="height: 2.25rem;line-height: 2.25rem;">
+                    <a class="icon icon-left" id="backId"></a>
+                    <h5 style="font-size:16px;">风险测评</h5>
+            </header>
+        <!--</c:if>-->
+		<div class="content">
+            <div class="open">
+            	<div class="introduce">
+            		<h4>尊敬的用户:</h4>
+            		<p>&nbsp;&nbsp;&nbsp;&nbsp;您好，本问卷旨在了解您可承受的风险程度，给出相应的投资建议，从而控制风险，达到您的投资目标。  </p>
+            		<p>&nbsp;&nbsp;&nbsp;&nbsp;  为了评估结果更接近您的真实情况，请您认真填写每一项。</p>
+            	</div>
+            </div>
+            <div class="btn_open">开始测评</div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+<script>
+    $(document).ready(function(){
+        //console.log('地址：',config2.api);
+        function getUrlParam(name){
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r!=null) return unescape(r[2]); return null; //返回参数值
+        }
+        var isWap = getUrlParam('isWap');
+
+        if(isWap){
+            $('.btn_open').click(function(){
+                //alert('开始答题浏览器token:'+getUrlParam('token'));
+                location.href='risk_ceping.html?token='+getUrlParam('token')+'&isWap='+getUrlParam('isWap');
+            })
+        }else{
+            $('.btn_open').click(function(){
+                location.href='risk_ceping.html';
+            })
+        }
+
+    })
+
+</script>
+</body>
+</html>

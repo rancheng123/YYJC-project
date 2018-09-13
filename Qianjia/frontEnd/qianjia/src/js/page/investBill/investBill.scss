@@ -1,0 +1,192 @@
+.investBill-wrap{
+
+    .bill-item{
+        background: #fff;
+        margin-bottom: 20px;
+        .b-time{
+            height: 92px;
+            line-height: 92px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .b-time:before{
+            content: '';
+            width: 8px;
+            height: 42px;
+            background: #fb343e;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #424242;
+            font-size: 26px;
+        }
+        .b-title{
+            height: 90px;
+            line-height: 90px;
+            padding: 0px 30px;
+            border-top: 2.5px solid #dddddd;
+            border-bottom: 2.5px solid #dddddd;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .c-info{
+            height: 267px;
+            .info-top{
+                height: 175px;
+                color: #fb343e;
+                text-align: center;
+                h3{
+                    font-size: 22px;
+                    line-height: 40px;
+                    color: #797979;
+                    text-align: center;
+                }
+                .i-left{
+                    float: left;
+                    width: 324px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0px 10px 0px 87px;
+                }
+                .i-right{
+                    float: left;
+                    width: 230px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    padding: 0px 10px;
+                }
+                .i-right:after{
+                    content: '';
+                    width: 2.5px;
+                    height: 77px;
+                    background: #dddddd;
+                    position: absolute;
+                    left: 0px;
+                    top: 49px;
+                }
+                .i-rate{
+                    line-height: 84px;
+                    font-size: 52px;
+                }
+                .samllFS{
+                    font-size: 46px;
+                }
+                .threeGroupNumber{
+                    font-size: 42px;
+                    .samllFS{
+                        font-size: 36px;
+                    }
+                }
+                
+                .i-money{
+                    line-height: 84px;
+                    font-size: 30px;
+                }
+            }
+            
+            .info-btm{
+                height: 92px;
+                text-align: center;
+                .time-box{
+                    float: left;
+                    width: 230px;
+                    .t-top{
+                        color: #ff7077;
+                        font-size: 24px;
+                        padding-top: 13px;
+                        i{
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border: 3px solid #ff7077;
+                            border-radius: 50%;
+                            margin-right: 18px;
+                            vertical-align: middle;
+                        }
+                        span{
+                            vertical-align: middle;
+                            line-height: 30px;
+                        }
+                    }
+                    p{
+                        font-size: 22px;
+                        color: #797979;
+                        line-height: 30px;
+                    }
+                }
+                .time-box:first-child{
+                    margin: 0px 50px 0px 123px;
+                }
+            }
+        }
+        
+
+        .b-company{
+            width: 500px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: left;
+        }
+        .b-type{
+            i{
+                display:inline-block;
+                width: 30px;
+                height: 30px;
+                background-image: url(../../../image/icon/moneyIcon.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                margin-right: 12px;
+                vertical-align: middle;
+            }
+            span{
+                vertical-align: middle;
+            }
+        }
+
+
+        .c-detail{
+            height: 90px;
+            line-height: 90px;
+            padding: 0px 30px;
+            border-top: 2.5px solid #dddddd;
+            border-bottom: 2.5px solid #dddddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                width: 420px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .c-r{
+                i{
+                    display:inline-block;
+                    width: 12px;
+                    height: 22px;
+                    background-image: url(../../../image/icon/b_right.png);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    margin-left: 16px;
+                    vertical-align: middle;
+                }
+                span{
+                    vertical-align: middle;
+                }
+            }
+            
+        }
+    }
+
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>账户与安全</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--<script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        docEl.style.fontSize = clientWidth / 320 * 20 + 'px';
+                    };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>-->
+	<script src="./js/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+	<link rel="stylesheet" type="text/css" href="css/cash.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/common.css">
+    <style>
+        .list-ul li{
+            list-style: none;
+        }
+        .lys-content .list-ul{
+            margin:0;
+        }
+		.paddingTop{
+            padding-top: 2rem;
+        }
+		.detail-ul{
+			margin:0;
+			padding:0;
+		}
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div style="background:#f1f1f1;">
+			<!--<header class="barheader bar-nav">
+				<a class="icon icon-left pull-left" id="backId"></a>
+				<h1 class="title">账户与安全</h1>
+			</header>-->
+			<header class="bar bar-nav isWap">
+				<a class="icon icon-left" id="backId"></a>
+				账户与安全
+			</header>
+        <div class="lys_content_remove lys-content paddingTop">
+        	<ul class="list-ul">
+        		<li>
+        			<div>为什么要开通陕坝农商银行存管账户？</div><div><img src="http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了保证出借人的资金安全，钱夹平台与陕坝农商银行签订了资金存管协议，采取资金存管的形式来保证出借人的资金不被任意挪用，所以您在钱夹首次出借前需要先开通陕坝农商银行存管账户。</li>
+        				
+        			</ul>
+        		</li>
+        		<li>
+        			<div>怎样开通陕坝农商银行存管账户？</div><div><img src="http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户在钱夹平台进行投资、充值、提现等操作时，系统会引导您开通银行存管账户，正确填写相关个人信息后即可开通，成功开通银行存管账户后即可享受钱夹平台的短期高息投资产品。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>什么是支付密码？</div><div><img src="http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支付密码是钱夹用户在开通陕坝农商银行存管账户时设置的6位数字密码。在投资、充值、提现等操作时需要输入支付密码，以保护用户资金安全。可在设置-账户安全-支付密码管理内进行修改、重置。</li>
+        			</ul>
+        		</li>
+        	</ul>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$(".list-ul>li").attr('isOpen',false);
+	$(".list-ul>li").click(function(){
+		$(this).siblings().children('.detail-ul').css("display","none");
+		$(this).siblings().find("img").attr("src","http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png");
+		
+		if( $(this).attr('isOpen')=='false' ){
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).attr('isOpen',true);
+			$(this).find("img").attr("src","http://ofl3qmlmx.bkt.clouddn.com/icon-top.png");
+			$(this).find(".detail-ul").css("display","block");
+		}else{
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).find("img").attr("src","http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png");
+			$(this).find(".detail-ul").css("display","none");
+			$(this).attr('isOpen',false);
+		}
+		
+	}) 
+})
+</script>
+<script src="js/staticCommon.js"></script>
+</body>
+</html>

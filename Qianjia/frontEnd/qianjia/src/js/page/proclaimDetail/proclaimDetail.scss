@@ -1,0 +1,16 @@
+.proclaimList{
+  background: white;
+  .proclaimItem{
+    margin: 0px 30px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .proclaimItem-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+    padding-top: 40px;
+  }
+  .proclaimItem-date{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}

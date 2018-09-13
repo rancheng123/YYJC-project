@@ -1,0 +1,40 @@
+@import "../../../scss/base/commonVar.scss";
+.riskManage-wrap{
+    .list-box{
+        font-size: 30px;
+        padding: 27px 32px;
+        background-color: #fff;
+        border-bottom: 2px solid $borderColor;
+        line-height: 56px;
+        margin-bottom: 15px;
+        dd{
+            color: #666666;
+            height: 56px;
+        }
+        .more-link{
+            float: right;
+            color: $commonColorRed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                line-height: 56px;
+            }
+
+        }
+    }
+    .img-box{
+        border-top: 2px solid $borderColor;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .project-img-box{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+}

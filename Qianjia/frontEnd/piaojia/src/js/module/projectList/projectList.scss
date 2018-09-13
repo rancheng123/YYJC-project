@@ -1,0 +1,146 @@
+/*
+    *Created by李永帅 2017 03 22
+*/
+.projectList{
+  border-top: 1px solid #fff;
+  box-shadow: 1px -3px 30px rgba(0, 0, 0, .5);
+  padding:0 20px;
+  background: #fff;
+  border-radius:20px;
+  margin-bottom: .2rem;
+  .listTop{
+    height:234px;
+    margin: 20px auto;
+  }
+  .listBottom{
+    h5{
+      padding-bottom: 20px;
+      font-size: 26px;
+      margin-left: 10px;
+    }
+    .liFlt{
+      float:right;
+    }
+    .moneyProgress{
+      padding-top: 10px;
+      font-size: 20px;
+      color:#666;
+      padding-bottom: 20px;
+    }
+  }
+  .positionR{
+    position: relative;
+  }
+  .floatRate{
+    width:80px;
+    height: 65px;
+    position: absolute;
+    top:0;
+    left:75%;
+  }
+  .projectTime{
+    li{
+      float:left;
+    }
+    .timeList,.btnTime{
+      float:left;
+      text-align: center;
+    }
+    .timeList{
+      width:75%;
+      li{
+        width: 30%;
+      }
+      .spanFontA{
+        font-size: 50px;
+      }
+      .spanFontB{
+        font-size: 40px;
+      }
+      .spanFontC{
+        font-size: 24px;
+      }
+      li:first-child{
+        width:40%;
+      }
+    }
+
+    .btnTime{
+      width: 25%;
+      height: 90px;
+      line-height:90px;
+      font-size: 22px;
+      /* background: -webkit-linear-gradient(#fe545d, #fc1f2b);Safari 5.1 - 6.0 */
+      /* background: -o-linear-gradient(#fe545d, #fc1f2b);Opera 11.1 - 12.0 */
+      /*  background: -moz-linear-gradient(#fe545d, #fc1f2b); Firefox 3.6 - 15 */
+      /* background: linear-gradient(#fe545d, #fc1f2b); 标准的语法（必须放在最后） */
+      border-radius: 50px;
+      color: #fff;
+      background: #ff7404;
+      .btnLength{
+        width: 100px;
+        line-height: 25px;
+        margin: 20px auto;
+        background: #ff7404;
+      }
+
+    }
+    .btnInstantly{
+      width: 25%;
+      height: 90px;
+      line-height:90px;
+      font-size: 22px;
+      background: -webkit-linear-gradient(#fe545d, #fc1f2b);/* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(#fe545d, #fc1f2b);/*Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(#fe545d, #fc1f2b);/*   Firefox 3.6 - 15 */
+      background: linear-gradient(#fe545d, #fc1f2b); /*  标准的语法（必须放在最后） */
+      border-radius: 50px;
+      color: #fff;
+      float:right;
+      text-align: center;
+    }
+  }
+  .timeMath{
+    font-size:30px ;
+    li:first-child{
+      color:#f54a4b;
+    }
+    li{
+    }
+  }
+  .timeTitle{
+    font-size: 24px;
+    font-weight: 400;
+  }
+  progress {
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    border: 1px solid #fff;
+    background-color:#ddd;
+    color: #f54a4b; /*IE10*/
+    border-radius: 20px;
+  }
+  progress::-moz-progress-bar { background: #ddd;}
+  progress::-webkit-progress-bar { background: #ddd;}
+  progress::-webkit-progress-value  { background: #f54a4b; }
+}
+.done{
+  margin-left:20px;
+}
+.gift{
+  height: 80px;
+  line-height: 80px;
+  border-top:1px dashed #e6e6e6;
+  img{
+    width: 34px;
+    height:37px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom:10px;
+  }
+  span:last-child{
+    padding-left:15px;
+    font-size: 24px;
+  }
+}

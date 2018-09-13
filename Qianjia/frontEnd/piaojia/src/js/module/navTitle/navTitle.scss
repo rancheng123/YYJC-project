@@ -1,0 +1,107 @@
+.navPtion{
+  position: relative;
+}
+.glbTatle{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  li{
+    float:left;
+    text-align: center;
+    line-height: 90px;
+    height: 90px;
+  }
+  li:nth-child(1){
+    width:15%;
+    font-size: 26px;
+    color: #2b2b2b;
+    font-family: "black";
+  }
+  li:nth-child(2){
+    width:70%;
+    color: #2b2b2b;
+    font-size: 36px;
+    font-family: "black";
+  }
+  li:nth-child(3){
+    width:15%;
+    img{
+      display: block;
+      width:39px;
+      height:30px;
+      /* margin-top: 30px;*/
+      margin: 30px auto;
+    }
+  }
+
+}
+//初始化样式
+.twoNav{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,.8);
+  top:90px;
+  left:0;
+  font-size:25px;
+  color: #fff;
+  display: none;
+  z-index: 2;
+  li{
+    float:left;
+    width: 33.3333333333333%;
+  }
+  .navImg{
+    width:40px;
+    height:39px;
+    margin:0 auto;
+    margin-bottom: 5px;
+  }
+  .navImg3{
+    width:40px;
+    height:40px;
+    margin:0 auto;
+    margin-bottom: 5px;
+    background: url("../../../image/nav3.png") no-repeat bottom center;
+    background-size: 100% auto;
+  }
+  .navImg2{
+    width:40px;
+    height:40px;
+    margin:0 auto;
+    margin-bottom: 5px;
+    background: url("../../../image/nav2.png") no-repeat bottom center;
+    background-size: 100% auto;
+  }
+  .navImg1{
+    width:40px;
+    height:40px;
+    margin:0 auto;
+    margin-bottom: 5px;
+    background: url("../../../image/nav1.png") no-repeat top center;
+    background-size: 100% auto;
+  }
+  //首页项当前页面样式
+  .indexText{
+    color: #f01818;
+  }
+  //备用样式
+  .indexTextA{
+    color: #fff;
+  }
+//投资项备用样式
+  .investTextA{
+    color:#f01818;
+  }
+  //我的项 备用样式
+  .myTextA{
+    color:#f01818;
+  }
+  img{
+    width:100%;
+    margin-bottom: -3px;
+  }
+  .navCont{
+    padding:18px 0;
+  }
+}

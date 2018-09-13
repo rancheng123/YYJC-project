@@ -1,0 +1,85 @@
+.investBillDetail-wrap{
+    min-height: 100%;
+    
+
+    .bill-title{
+        height: 89px;
+        line-height: 89px;
+        background: #fff;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3{
+            flex: 1;
+            font-size: 30px;
+            text-align: center;
+        }
+        h3:first-child{
+            border-right: 2.5px solid #dddddd;
+        }
+        .active{
+            color: #fb343e;
+        }
+    }
+    .g-bill-detail{
+        background: #fff;
+        .g-d-list:last-child{
+            border-bottom: none;
+        }
+    }
+
+    // 消费账单
+    .consumeBill-box{
+        background: #fff;
+        padding-right: 0px;
+        padding-left: 38px;
+        padding-top: 0px;
+        .g-d-list{
+            border-bottom: none;
+        }
+        li{
+            border-bottom: 2.5px solid #ddd;
+            h4{
+                font-size: 32px;
+                color: #202020;
+                line-height: 40px;
+                padding:32px 0px 10px 0px;
+            }
+            p{
+                font-size: 20px;
+                color: #999999;
+                line-height: 30px;
+            }
+            p:last-child{
+                padding-bottom: 16px;
+            }
+            span{
+                font-size: 40px;
+                color: #333333;
+                padding:14px 30px 0px 0px;
+            }
+            .i-left{
+                width: 530px;
+            }
+        }
+        li:last-child{
+            border-bottom: none;
+            // height: 159px;
+        }
+        li.noData{
+            
+            padding: 20px 38px 20px 0px;
+            span{
+                text-align: center!important;
+                font-size: 22px!important;
+            }
+        }
+        .refund-box{
+            span{
+                color: #fb343e;
+            }
+        }
+ 
+    }
+}

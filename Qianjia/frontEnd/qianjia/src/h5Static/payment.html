@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>投资与回款</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        docEl.style.fontSize = clientWidth / 320 * 20 + 'px';
+                    };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <script src="./js/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+	<link rel="stylesheet" type="text/css" href="css/cash.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/common.css">
+    <style>
+        .list-ul li{
+            list-style: none;
+        }
+        .lys-content .list-ul{
+            margin:0;
+        }
+		.paddingTop{
+            padding:2.2rem 0 0 0;
+        }
+		.detail-ul{
+			padding:0;
+			margin:0;
+		}
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div style="background:#f1f1f1;">
+			<header class="bar bar-nav isWap">
+				<a class="icon icon-left" id="backId"></a>
+				投资与回款
+			</header>
+        <div class="lys_content_remove lys-content paddingTop">
+        	<ul class="list-ul">
+        		<li>
+        			<div>在钱夹投资有什么门槛？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			
+        			<ul class="detail-ul">
+        				<li><span class="ul-title"></span></li>
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;起投金额100元，限持中国大陆身份证居民。</li>
+        			</ul>
+        			
+        		</li>
+        		<li>
+        			<div>支付为什么会失败？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>(1)&nbsp;&nbsp;投资人账户可用金额不足，需要充值。</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>支付密码输入错误。</span></li>
+        				<li class="spanFlaot"><span>(3)&nbsp;&nbsp;</span><span>由于网络、服务器等原因造成的订单异常。</span></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>投资后可以撤回吗？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        				<ul class="detail-ul">
+	        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在投标的不可以主动撤回。</li>
+	        			</ul>
+        		</li>
+        		<li>
+        			<div>投资后资金打到钱夹账户上吗？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钱夹只是仅提供信息中介服务，您的资金将通过陕坝农商银行进行存管。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>如何查看投资合同？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;打开钱夹App，点击“我的投资”查看投资记录，点击“查看账单详情”，进入后，点击页面右上角“查看合同”。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>钱夹的还款方式是什么？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钱夹的还款方式为一次性还本付息，即在借款周期开始时，出借本金，周期结束时，回收本金和利息。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>收到回款后可以马上投资吗？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以的，而且我们建议投资人在收到回款后及时进行再次投标，确保收益的最大化。</li>
+        			</ul>
+        		</li>
+        		
+        	</ul>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$(".list-ul>li").attr('isOpen',false);
+	$(".list-ul>li").click(function(){
+		$(this).siblings().children('.detail-ul').css("display","none");
+		$(this).siblings().find("img").attr("src","images/icon-bottom.png");
+		
+		if( $(this).attr('isOpen')=='false' ){
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).attr('isOpen',true);
+			$(this).find("img").attr("src","images/icon-top.png");
+			$(this).find(".detail-ul").css("display","block");
+		}else{
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).find("img").attr("src","images/icon-bottom.png");
+			$(this).find(".detail-ul").css("display","none");
+			$(this).attr('isOpen',false);
+		}
+		
+	}) 
+})
+</script>
+<script src="js/staticCommon.js"></script>
+</body>
+</html>

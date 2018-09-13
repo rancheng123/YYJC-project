@@ -1,0 +1,125 @@
+.inviteFriends{
+  .bg{
+    background-color: #ffc863;
+    padding-top: 20px;
+    padding-bottom: 67px;
+  }
+  .share_qianjia{
+    display: block;
+    width: 88px;
+    height: 32px;
+    background: url(../../../image/img/share_logo.png)  no-repeat;
+    background-size: 100% 100%;
+    margin: 19px 0px 0px 30px;
+  }
+  .textInput{
+    width: 524px;
+    height: 84px;
+    border-radius: 41px;
+    margin-left: 80px;
+    border: 0.01rem solid transparent;
+    padding: 0px 30px;
+  }
+  .redBtn{
+    width: 524px;
+    height: 84px;
+    border-radius: 41px;
+    margin-left: 80px;
+    border: 0.01rem solid transparent;
+    padding: 0px 30px;
+    background: #fd7461;
+    color: white;
+    text-align: center;
+    line-height: 84px;
+  }
+  .mt52{
+    margin-top: 52px;
+  }
+  .mt22{
+    margin-top: 22px;
+  }
+  #login{
+    color: #885d00!important;
+    font-size: 31px;
+    text-align: center;
+  }
+  .topImg{
+    margin-top: 100px;
+  }
+  #checkCodeImg{
+    position: absolute;
+    top: 0px;
+    right: 123px;
+  }
+  .posRel{
+    position: relative;
+  }
+  .btn-getMsgCode{
+    position: absolute;
+    top: 24px;
+    right: 68px;
+  }
+
+  .timeCount{
+    position: absolute;
+    top: -9px;
+    right: 107px;
+  }
+}
+
+
+
+
+
+.login{
+  .imgWarp{
+    position: relative;
+    .bg1{
+      width: 750px;
+      height: 360px;
+    }
+    .bg2{
+      width: 186px;
+      height: 186px;
+      border-radius: 50%;
+    }
+    .pos1{
+      position: absolute;
+      left: 286px;
+      top: 70px;
+    }
+    .bg3{
+      width: 284px;
+      height: 48px;
+      position: absolute;
+      left: 236px;
+      top: 276px;
+    }
+  }
+
+
+  .validCode{
+    width: 155px;
+    height: 56px;
+    display: inline-block;
+    margin-top: 17px;
+  }
+
+  .pR30{
+    padding-right: 30px;
+  }
+
+  .btn-getMsgCode{
+    color: #fb343e;
+    width: 248px;
+  }
+  .vertical-line{
+    margin: 0px 38px;
+  }
+
+
+}
+
+
+
+

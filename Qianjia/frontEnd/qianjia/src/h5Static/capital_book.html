@@ -1,0 +1,123 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>资金来源合法承诺书</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+
+
+
+    <script type="text/javascript" chartset="UTF-8">
+        $(document).ready(function(){
+            $("#backId").click(function(){
+                //alert('1');
+                //window.history.go(-1);
+                // history.back(-1);
+                // if (false) {
+                    
+                // } else {
+                //     location.href="/qjfweb/wap/commonStaticHtml?jsp=registerInvite";
+                // }
+            });
+        });
+    </script>
+	<!--<%@ include file="/WEB-INF/views/wap/include/wap-meta.jsp"%>	-->
+	<title></title>
+	<!--<%@ include file="/WEB-INF/views/wap/include/zhou-new-head.jsp"%>-->
+	<style>
+		html{
+           margin:0;
+           padding:0;
+		   font-size:20px !important;
+        }
+        .content{
+            background: #fff;
+        }
+        .paddingTop{
+            padding:2rem 0;
+        }
+        #img img{
+            width: 100%;
+        }
+	</style>
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page" style="background:#ebebeb;">  
+    	<!--<c:if test="${isWap=='YES'}">-->
+             <header class="bar bar-nav isWap">
+                    <a class="icon icon-left" id="backId"></a>
+                    资金来源合法承诺书
+            </header>
+        <!--</c:if>-->
+		<div class="content">
+            <div class="open">
+            	<div class="introduce">
+            		<div class="lys_content_remove paddingTop" id="img">
+                    </div>
+            	</div>
+            </div>
+            <div class="btn_open"></div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+<script>
+    function getUrlParam(name){
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r!=null) return unescape(r[2]); return null; //返回参数值
+    }
+    var data = {
+        "imgtype": "FUNDCOMMITMENT"
+    };
+    $.ajax({
+        url: config.api+'/qj/front/v1/commonimg/getCommonImg',
+        type: 'POST',
+        dataType: 'json',
+        contentType:"application/json",
+        data : JSON.stringify(data),
+        success: function (callback) {
+            //console.log(callback);
+            var imgArr = callback.data.commonImgList;
+            var imgStr = '';
+            //console.log(imgArr);
+            if(imgArr.length!=0){
+                
+                $.each(imgArr,function(index,item){
+                    imgStr+='<img src='+config.img+item.imgurl+' />';
+                })
+                $('#img').html(imgStr);
+            }else{
+                $('#img').html('<div class="noData">暂无数据</div>');
+            }
+        },
+        error: function (err) {
+            console.log(err);
+        }
+    })
+
+</script>
+</body>
+</html>

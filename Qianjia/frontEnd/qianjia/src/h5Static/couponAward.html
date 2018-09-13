@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>优惠与奖励</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        docEl.style.fontSize = clientWidth / 320 * 20 + 'px';
+                    };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <script src="./js/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+	<link rel="stylesheet" type="text/css" href="css/cash.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<script src="./js/config.js"></script>
+    <style>
+        .list-ul li{
+            list-style: none;
+        }
+        .lys-content .list-ul{
+            margin:0;
+        }
+		a{
+			color:#ccc;
+		}
+		.paddingTop{
+            padding-top: 2rem;
+        }
+		.detail-ul{
+			padding:0;
+			margin:0;
+		}
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div style="background:#f1f1f1;">
+			<header class="bar bar-nav isWap">
+				<a class="icon icon-left" id="backId"></a>
+				优惠与奖励
+			</header>
+        <div class="lys_content_remove lys-content paddingTop">
+        	<ul class="list-ul">
+        		<li>
+        			<div>抵现券</div><div><img src="http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png" alt=""></div>
+        			
+        			<ul class="detail-ul">
+        				<li><span class="ul-title"></span></li>
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户可通过活动获得抵现券，满足使用条件后可在投资时直接抵扣相应金额。</li>
+        			</ul>
+        			
+        		</li>
+        		<li>
+        			<div>活动奖励</div><div><img src="http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钱夹会不定期举办线上活动，参与活动用户可获得抵现券、实物等不同奖励，具体以活动为准。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>加息特权</div><div><img src="http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;推荐他人注册钱夹APP时填写推荐人手机号并完成注册后，被推荐人可获得一次加息特权，可用于钱夹内的投资，可在原年化回报率的基础上加息+1%（每个账号限一次）。</li>
+        			</ul>
+        		</li>
+        	</ul>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+<script>
+$(function(){
+	$(".list-ul>li").attr('isOpen',false);
+	$(".list-ul>li").click(function(){
+		$(this).siblings().children('.detail-ul').css("display","none");
+		$(this).siblings().find("img").attr("src","http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png");
+		
+		if( $(this).attr('isOpen')=='false' ){
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).attr('isOpen',true);
+			$(this).find("img").attr("src","http://ofl3qmlmx.bkt.clouddn.com/icon-top.png");
+			$(this).find(".detail-ul").css("display","block");
+		}else{
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).find("img").attr("src","http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png");
+			$(this).find(".detail-ul").css("display","none");
+			$(this).attr('isOpen',false);
+		}
+		
+	}) 
+})
+</script>
+</body>
+</html>

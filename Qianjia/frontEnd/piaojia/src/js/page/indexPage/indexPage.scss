@@ -1,0 +1,25 @@
+.indexPage{
+
+  .imgTagTest{
+    width: 100px;
+    height: 100px;
+
+  }
+  .backgroundUrlTest{
+    width: 100px;
+    height: 100px;
+    background: url('../../../image/dog.jpg') no-repeat;
+    background-size: 100%;
+  }
+  .lazyload{
+   /* height: 720px;
+    overflow: auto;*/
+    border:1px solid #333;
+    img{
+      display: block;
+      width:100%;
+      margin: 20px auto;
+    }
+  }
+}
+

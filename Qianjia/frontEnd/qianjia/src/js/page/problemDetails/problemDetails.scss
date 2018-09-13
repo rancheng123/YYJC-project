@@ -1,0 +1,65 @@
+.problem_list{
+    width:100%;
+        .list_left{
+            float:left;
+            line-height: 99px;
+            height: 99px;
+            width: 90%;
+        }
+        .left_img{
+            width: 54px;
+            height: 54px;
+            display: inline-block;
+            vertical-align: middle;
+            // margin-bottom: 20px;
+            margin-right: 30px;
+            img{
+                width: 100%;
+            }
+        }
+        .left_text{
+            display: inline-block;
+            line-height: 99px;
+            height: 99px;
+            font-size:32px;
+        }
+        .left_text_true{
+            display: inline-block;
+            line-height: 99px;
+            height: 99px;
+            font-size:32px;
+            width: 55%;
+        }
+        .list_right{
+            float:right;
+            width: 10%;
+            .right_img{
+                width: 16px;
+                height: 26px;
+                margin:36.5px;
+            }
+        }
+}
+.problem_list:after{
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.problem_border{
+    width:100%;
+    border-bottom: 2px solid #dcdcdc;
+}
+.bar_list .textDetails{
+    display: none;
+     border-top:2px solid #dcdcdc; 
+    border-bottom:2px solid #dcdcdc; 
+    padding:10px 0;
+    color:#9c9c9c;
+}
+.bar_list:first-child .textDetails{
+    border-top:0;
+}
+.bar_list:last-child .textDetails{
+    border-bottom: 0;
+}

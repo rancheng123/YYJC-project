@@ -1,0 +1,112 @@
+
+.seeBank{
+    background: #fff;
+
+
+    .backList{
+        margin-top: 30px;
+        width:90%;
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    .odd{
+        background-image:-webkit-linear-gradient(to top, #119cb3, #21b18e); 
+        background-image:linear-gradient(to top,#119cb3,#21b18e);
+    }
+    .even{
+        background-image:-webkit-linear-gradient(to top, #e75967, #e9507c); 
+        background-image:linear-gradient(to top,#e75967,#e9507c);
+    }
+    .bank{
+        position: relative;
+        width: 100%;
+        height:260px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+            .checkboxB{
+                display: none;
+            }
+            .state{
+                position: absolute;
+                top:0;
+                right: 0;
+                width: 116px;
+                height:114px;
+                    img{
+                        width: 100%;
+                    }
+            }
+            .bank_top{
+                padding-left: 45px;
+                padding-top:30px;
+                // span:first-child{
+                //     width: 100px;
+                //     height: 100px;
+                //     border-radius: 50%;
+                //     background: #fff;
+                //     margin-right: 30px;
+                // }
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    color:#fff;
+                    margin-right: 20px;
+                    li{
+                        line-height: 50px;
+                        height: 50px;
+                        font-size: 30px;
+                    }
+                    li:last-child{
+                        font-size:24px;
+                    }
+                }
+                
+            }
+            .bank_bottom{
+                font-size: 40px;
+                color:#fff;
+                // text-align: center;
+                width: 90%;
+                padding-left: 7%;
+                padding-top: 0.3rem;
+            }
+    }
+    .bankBtn{
+        margin-top:20px;
+        text-align: center; 
+        width: 100%;
+        height:120px;
+        border-radius: 20px; 
+        background: #fff;
+        padding:45px 0;
+            .bankBtn_top{
+                width: 70px;
+                height: 70px;
+                margin:0 auto;
+                    img{
+                        width:100%;
+                    }
+            }
+            .bankBtn_bottom{
+                font-size: 24px;;
+                color:#fc676d;
+                margin-top:20px;
+            }
+    }
+    .bankInformation{
+        padding:0 5%;
+        font-size: 26px;
+        .bankList{
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            line-height: 93px;
+        }
+        
+            div{
+                flex:1;
+            }
+            div:last-child{
+                text-align: right
+            }
+    }
+}

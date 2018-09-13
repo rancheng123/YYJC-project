@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>充值与提现</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        docEl.style.fontSize = clientWidth / 320 * 20 + 'px';
+                    };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <script src="./js/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+	<link rel="stylesheet" type="text/css" href="css/cash.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/common.css">
+    <style>
+        .list-ul li{
+            list-style: none;
+        }
+        .lys-content .list-ul{
+            margin:0;
+        }
+		.paddingTop{
+            padding-top: 2rem;
+        }
+		.detail-ul{
+			padding:0;
+			margin:0;
+		}
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div style="background:#f1f1f1;">
+			<!--<header class="barheader bar-nav">
+				<a class="icon icon-left pull-left" id="backId"></a>
+				<h1 class="title">充值与提现</h1>
+			</header>-->
+			<header class="bar bar-nav isWap">
+				<a class="icon icon-left" id="backId"></a>
+				充值与提现
+			</header>
+        <div class="lys_content_remove lys-content paddingTop">
+        	<ul class="list-ul">
+        		<li>
+        			<div>钱夹有哪些充值方式？是否收费？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			
+        			<ul class="detail-ul">
+        				<li><span class="ul-title">钱夹目前支持网银支付和快捷支付两种充值方式：</span></li>
+        				<li>(1)&nbsp;&nbsp;网银充值必须开通网上银行业务。</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>快捷支付对不同银行有不同的要求，可在充值规则中查看。</span></li>
+        				<li class="spanFlaot"><span>注:&nbsp;&nbsp;</span><span>目前手机端仅支持快捷支付，用户充值手续费已由钱夹垫付。</span></li>
+        			</ul>
+        			
+        		</li>
+        		<li>
+        			<div>如何充值？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>(1)&nbsp;&nbsp;登录钱夹，开通陕坝农商银行存管账户并绑定银行卡</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>在我的页面点击充值按钮，输入充值金额并输入正确的支付密码，即可充值成功。</span></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>快捷充值单笔限额和单日累计限额分别是多少？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不同银行对应的充值限额不同，请在充值规则中查看具体限额提示。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>绑定银行卡有什么要求？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>(1)&nbsp;&nbsp;钱夹支持以下15家银行的储值卡：中国工商银行、中国农业银行、中国银行、中国建设银行、交通银行、上海银行、中信银行、兴业银行、浦发银行、平安银行、民生银行、光大银行、华夏银行、广发银行、北京银行。</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>姓名、身份证号、银行预留手机号需与银行留存信息保持一致。</span></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>如何提现？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>(1)&nbsp;&nbsp;打开钱夹App-我的页面，点击“提现”按钮。</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>输入提现金额，点击“确认提现”按钮，输入正确的支付密码，即可提现完成。</span></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>信用卡可充值、提现吗？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据国家规定，信用卡充值提现属于违法行为，因此无法使用。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>提现是否有金额限制？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提现最低金额为10元。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>充值到账时间？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;充值正常情况下为当天到账，但不排除由于网络原因、银行通道等问题造成充值延迟到账。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>提现到账时间？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无特殊情况，提现金额将会在申请提现的当日到账。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>充值后的资金可否提现？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以提现。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>更换绑定的银行卡，如何操作？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在保证账户可用余额/冻结余额/标的余额/总余额均为0后，可点击我的银行卡-查看银行卡右上角图标，选择解绑，解绑成功后重新绑定银行卡。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>提现收手续费吗？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提现产生的手续费需用户自行支付，费用为取现金额的 0.5‰+2 元/笔</li>
+        			</ul>
+        		</li>
+        		
+        	</ul>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$(".list-ul>li").attr('isOpen',false);
+	$(".list-ul>li").click(function(){
+		$(this).siblings().children('.detail-ul').css("display","none");
+		$(this).siblings().find("img").attr("src","images/icon-bottom.png");
+		
+		if( $(this).attr('isOpen')=='false' ){
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).attr('isOpen',true);
+			$(this).find("img").attr("src","images/icon-top.png");
+			$(this).find(".detail-ul").css("display","block");
+		}else{
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).find("img").attr("src","images/icon-bottom.png");
+			$(this).find(".detail-ul").css("display","none");
+			$(this).attr('isOpen',false);
+		}
+		
+	}) 
+    //返回上一页
+    // $("#backId").click(function(){
+    //     window.history.back();
+    // });
+})
+</script>
+<script src="js/staticCommon.js"></script>
+</body>
+</html>

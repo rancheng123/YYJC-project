@@ -1,0 +1,23 @@
+.trundle{
+  height: 60px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  span{
+    display: inline-block;
+    width: 25px;
+    height:28px;
+    margin: 16px auto;
+    margin-left:30px;
+  }
+  ul{
+    position: absolute;
+    /*top:-180px;*/
+    left:80px;
+    transition: top 5s;
+  }
+  li{
+    line-height: 60px;
+    height:60px;
+  }
+}

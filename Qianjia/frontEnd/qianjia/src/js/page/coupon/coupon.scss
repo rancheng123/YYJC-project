@@ -1,0 +1,134 @@
+@import "../../../scss/base/commonVar.scss";
+//优惠券
+.coupon-wrap{
+    padding: 110px 0px 30px 0px;
+    .viewListWrap{
+        padding:0px 30px;
+    }
+    .coupon-list{
+        //padding-top: 80px;
+        li,.li-item{
+            // display: flex;
+
+            height: 183px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-size: 207px 176px;
+            background-position: 462px bottom;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .wsy-item{
+            background-image: url(../../../image/icon/quan_wsy.png);
+            .c-head{
+                background-color: $commonColorRed;
+                background-image: url(../../../image/img/wave_red.png);
+            }
+        }
+        .ysy-item{
+            background-image: url(../../../image/icon/quan_ysy.png);
+        }
+        .ygq-item{
+            background-image: url(../../../image/icon/quan_ygq.png);
+            .c-detail{
+                color: #c3c3c3;
+                h2{
+                    color: #c3c3c3;
+                    span{
+                        color: #c3c3c3;
+                    }
+                }
+                h3{
+                    color: #c3c3c3;
+                }
+                h4{
+                    color: #c3c3c3;
+                }
+                p{
+                    color: #c3c3c3;
+                }
+            }
+        }
+        .c-head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 180px;
+            height: 100%;
+            background-color: #b3b3b3;
+            background-image: url(../../../image/img/wave_gray.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: 4px 100%;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            h3{
+                font-size: 20px;
+                line-height: 42px;
+            }
+            h4{
+                font-size: 50px;
+                line-height: 84px;
+                span{
+                    font-size: 38px;
+                }
+            }
+            i{
+                display: block;
+                width: 87px;
+                height: 2px;
+                background-color: #fff;
+            }
+            p{
+                font-size: 20px;
+                line-height: 38px;
+                margin-top: 4px;
+            }
+        }
+        .c-detail{
+            //display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 214px;
+            height: 100%;
+            h2{
+                font-size: 30px;
+                color: #292929;
+                height: 92px;
+                line-height: 46px;
+                padding-top: 4px;
+                overflow: hidden;
+                // text-overflow: ellipsis;
+                // white-space: nowrap;
+                span{
+                    color: #ff7404;
+                }
+            }
+            h3{
+                font-size: 22px;
+                color: #515151;
+                height: 36px;
+                line-height: 36px;
+                padding: 8px 0px;
+                overflow: hidden;
+            }
+            h4{
+                font-size: 20px;
+                color: #515151;
+                height: 28px;
+                line-height: 28px;
+                overflow: hidden;
+            }
+            p{
+                font-size: 20px;
+                color: #7b7b7b;
+                height: 30px;
+                line-height: 30px;
+                overflow: hidden;
+            }
+        }
+    }
+}

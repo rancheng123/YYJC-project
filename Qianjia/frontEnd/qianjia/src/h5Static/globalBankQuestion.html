@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>常见问题</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        docEl.style.fontSize = clientWidth / 320 * 20 + 'px';
+                    };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <script src="./js/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+	<link rel="stylesheet" type="text/css" href="css/cash.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/common.css">
+    <script type="text/javascript" src="js/config.js"></script>
+    <style>
+        .list-ul li{
+            list-style: none;
+        }
+        .lys-content .list-ul{
+            margin:0;
+        }
+		.paddingTop{
+            padding-top: 2rem;
+        }
+		.detail-ul{
+			padding-left: 0.5rem;
+			font-size: 0.65rem;
+		}
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div style="background:#f1f1f1;">
+			<!-- <header class="barheader bar-nav">
+				<a class="icon icon-left pull-left" id="backId"></a>
+				<h1 class="title">注册与登陆</h1>
+			</header> -->
+			<header class="bar bar-nav isWap">
+				<a class="icon icon-left" id="backId"></a>
+				<span id="problemDetailTitle">银行常见问题</span>
+			</header>
+        <div class="lys_content_remove lys-content paddingTop">
+        	<ul class="list-ul">
+        		 <li>
+        			<div>如何成为钱夹注册用户？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>(1)&nbsp;&nbsp;打开钱夹App，点击“立即注册”按钮。</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>根据提示信息，填写手机号、短信验证码、邀请码(选填)，点击“注册”。</span></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>如何登录钱夹App？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>(1)&nbsp;&nbsp;打开钱夹App。</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>根据提示信息，填写手机号、短信验证码，点击“登录”。</span></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>钱夹登录有几种方式？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			
+        			<ul class="detail-ul">
+        				<li><span class="ul-title">钱夹现在共有两种登录方式：</span></li>
+        				<li class="spanFlaot"><span>(1)&nbsp;&nbsp;</span><span>根据提示信息，输入手机号、登录密码，点击“登录”。</span></li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>根据提示信息，输入手机号、短信验证码，点击“登录”。</span></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>钱夹密码与支付密码有什么区别？</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>(1)&nbsp;&nbsp;钱夹密码：用于用户登录。</li>
+        				<li class="spanFlaot"><span>(2)&nbsp;&nbsp;</span><span>支付密码：用于用户投资、充值、提现等操作时使用。</span></li>
+        			</ul>
+        		</li> 
+        	</ul>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+    // console.log('我们来了');
+	$(".list-ul>li").attr('isOpen',false);
+	$(".list-ul").on('click','li',function(){
+		$(this).siblings().children('.detail-ul').css("display","none");
+		$(this).siblings().find("img").attr("src","images/icon-bottom.png");
+		
+		if( $(this).attr('isOpen')=='false' ){
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).attr('isOpen',true);
+			$(this).find("img").attr("src","images/icon-top.png");
+			$(this).find(".detail-ul").css("display","inline-block");
+		}else{
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).find("img").attr("src","images/icon-bottom.png");
+			$(this).find(".detail-ul").css("display","none");
+			$(this).attr('isOpen',false);
+		}
+		
+	}) 
+    //返回上一页
+    // $("#backId").click(function(){
+    //     window.history.back();
+    // });
+    // var isWap = getQueryString('isWap');
+    // if(isWap){
+    //     $('.isWap').css('display','none');
+    //     $('.lys_content_remove').removeClass('paddingTop')
+    //     $('.content').css('paddingTop','0.5rem');
+    // }else{
+    //     $('.isWap').css('display','block');
+    // }
+    
+        // var title = getQueryString('title');
+        // console.log('取标题：',title);
+        // console.log(getUrlMsg());
+        // alert('问题类型：：：'+getUrlParam('questionTypeId'));
+    // $('#problemDetailTitle').text( decodeURIComponent(getUrlParam('title')) );
+    var listHtml='';
+    // console.log('到这一步',window.location);
+    $.ajax({
+        type : "POST",
+        url : config.api+"/qj/front/v1/question/questionList",
+        cache : false,
+        dataType : "json",
+        contentType:"application/json",
+        data : JSON.stringify({
+            "questionTypeId":getUrlParam('questionTypeId')
+        }),
+        success : function(resMap) {
+            if (parseInt(resMap.resultCode) == 0) {
+                // console.log('问题详情：',resMap.data);
+
+                for(var i = 0 ; i < resMap.data.length ; i++){
+                    listHtml += '<li>'+
+                                    '<div>'+resMap.data[i].questionTitle+'</div><div><img src="images/icon-bottom.png" alt=""></div>'+
+                                    '<ul class="detail-ul">'+
+                                        '<li>'+resMap.data[i].questionContent+'</li>'+
+                                    '</ul>'+
+                                '</li>'
+                }
+                $('.list-ul').html(listHtml);
+            }
+        }
+    })
+    
+})
+
+function getUrlParam(name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r!=null) return r[2]; return null; //返回参数值
+}
+// function getQueryString(name) {
+//     let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+//     let r = window.location.search.substr(1).match(reg);
+//     if (r != null) {
+//         return decodeURIComponent(r[2]);
+//     } else {
+//         return null;
+//     }
+// }
+
+</script>
+<script src="js/staticCommon.js"></script>
+</body>
+</html>

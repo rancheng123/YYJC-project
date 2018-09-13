@@ -1,0 +1,48 @@
+@import "../../../scss/base/commonVar.scss";
+
+//收货地址管理
+.reAddress-wrap{
+    padding-bottom: 104px;
+    .reAddress-box{
+        color: #666666;
+        font-size: 30px;
+        padding-left: 26px;
+        background-color: #fff;
+        border-bottom: 2px solid $borderColor;
+        .a-item{
+            display: flex;
+            align-items: center;
+            padding:20px 20px 24px 0px;
+            line-height: 48px;
+            border-bottom: 2.5px solid $borderColor;
+        }
+        .a-item:last-child{
+            border-bottom: none;
+        }
+        .a-deatilAddr{
+            align-items: flex-start;
+        }
+        .i-title{
+            font-size: 30px;
+            color: #666;
+        }
+        .i-content{
+            flex: 3;
+            color: #333;
+            input{
+                border:none;
+                width: 100%;
+                line-height: 48px;
+            }
+            textarea{
+                border:none;
+                width: 100%;
+                line-height: 48px;
+                padding: 0px;
+                outline: none;
+                resize: none;
+                vertical-align: top;
+            }
+        }
+    }
+}

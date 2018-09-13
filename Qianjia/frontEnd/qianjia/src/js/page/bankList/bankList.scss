@@ -1,0 +1,38 @@
+
+.bankList{
+    background: #fff;
+     ul{
+         border-bottom:2.5px solid #ccc;
+         li{
+             display: flex;
+             height: 110px;
+             
+             .left{
+                 width: 100px;
+                 height:110px;
+                 background: #fff;
+                 padding-left: 10px;
+                 div{
+                     width: 52px;
+                     height: 52px;
+                     margin:29px auto;
+                     .img{
+                         width: 100%;
+                     }
+                 }
+             }
+             .right{
+                 flex: 1;
+                 line-height: 110px;
+                 font-size: 28px;
+                 font-weight: bold;
+                 padding-left: 20px;
+                 border-bottom: 2.5px solid #ccc;
+             }
+             
+         }
+         li:last-child .right{
+             border-bottom: 0;
+         }
+     }
+}

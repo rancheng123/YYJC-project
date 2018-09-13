@@ -1,0 +1,107 @@
+html{
+  background: rgba(0,0,0,.2);
+  height:100%;
+  width: 100%;
+}
+/*  开通汇付账单  */
+.modal{
+  width: 600px;
+  height:450px;
+  position: fixed;
+  background: #fff;
+  border-radius: 10px;
+  left:50%;
+  top:50%;
+  margin-left:-300px;
+  margin-top:-225px;
+    .img{
+      width:166px;
+      height:166px;
+      position: absolute;
+      left:50%;
+      /*top:50%;*/
+      margin-left: -83px;
+      margin-top: -83px;
+    }
+    .m-title{
+      line-height:116px;
+      height:116px;
+      font-size:40px;
+      font-weight: bold;
+      text-align:  center;
+      margin-top:83px;
+      color:#f01819;
+    }
+    .m-content{
+      line-height:90px;
+      height:90px;
+      font-size: 28px;
+      text-align: center;
+      color:#999;
+    }
+  .m-foot:after{
+    content:'';
+    display: block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+  }
+  .m-foot .btnA,.m-foot .btnB{
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  .m-foot{
+    margin-top:30px;
+  }
+}
+
+
+
+/*  加息特权弹窗提示  */
+.modal_2{
+  width: 456px;
+  height:590px;
+  position: fixed;
+  background: #fff;
+  border-radius: 10px;
+  left:50%;
+  top:50%;
+  margin-left:-228px;
+  margin-top:-295px;
+  border-radius: 20px;
+  .img_2{
+    width:456px;
+    height:310px;
+    margin-bottom:20px;
+  }
+  .m-title_2{
+    line-height: 60px;
+    height:60px;
+    font-size:40px;
+    font-weight: bold;
+    text-align:  center;
+    color:#f01819;
+  }
+  .m-content_2{
+    line-height: 45px;
+    height:45px;
+    font-size: 28px;
+    text-align: center;
+    color:#333;
+  }
+  .m-foot_2 .btn_2{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top:20px;
+  }
+}
+.backMotail{
+  background: rgba(0,0,0,.2);
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+}

@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>常见问题</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+
+
+
+    <script type="text/javascript" chartset="UTF-8">
+        $(document).ready(function(){
+            $("#backId").click(function(){
+                location.href="capital_book.html";
+                // if (false) {
+                //     location.href="/qjfweb/wap/inviteActivityReg?inviterCode=" + '';
+                // } else {
+                //     location.href="/qjfweb/wap/commonStaticHtml?jsp=registerInvite";
+                // }
+            });
+        });
+    </script>
+    <!--<link rel="stylesheet" href="./css/cash.css">
+    <link rel="stylesheet" href="./css/questions.css">-->
+    <style>
+        html{
+           margin:0;
+            padding:0;
+			font-size:20px !important;
+        }
+		.lys-content{
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+		}
+        .paddongTop{
+            padding-top: 2rem;
+        }
+		.lys-content div{
+			width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            border-bottom: 1px solid #ddd;
+            font-size: 0.75rem;
+            padding: 0.5rem;
+		}
+		.lys-content div:last-child{
+			border:0;
+		}
+		.lys-content div img:first-child{
+			margin-right:0.5rem;
+			vertical-align: middle;
+			/*width: 20px;*/
+		}    
+		.lys-content div img:last-child{
+			float: right;
+			margin-right:0.5rem;
+			/*width:20px;*/
+		}
+	</style>
+</head>
+
+<body>
+<div class="page-group">
+    <div class="page" style="background:#f1f1f1;">
+		<!--<c:if test="${isWap == true}">-->
+            <header class="bar bar-nav isWap">
+                <a class="icon icon-left" id="backId"></a>
+                常见问题
+            </header>
+		<!--</c:if>-->
+        <div class="lys_content_remove lys-content paddongTop">
+            <div class="list" id="problemDetail">
+                <img src="images/l-icon.png" alt="">注册与登录<a href="#"><img src="images/btn-right.png" alt=""></a>
+            </div>
+            <div class="list" id="accountSafe">
+                <img src="images/l-icon.png" alt="">账户与安全<a href="#"><img src="images/btn-right.png" alt=""></a>
+            </div>
+            <div class="list" id="withdraWdeposit">
+                <img src="images/l-icon.png" alt="">充值与提现<a href="#"><img src="images/btn-right.png" alt=""></a>
+            </div>
+            <div class="list" id="investPayments">
+                <img src="images/l-icon.png" alt="">投资与回款<a href="#"><img src="images/btn-right.png" alt=""></a>
+            </div>
+            <div class="list" id="couponAward">
+                <img src="images/l-icon.png" alt="">优惠与奖励<a href="#"><img src="images/btn-right.png" alt=""></a>
+            </div>
+            <div class="list" id="nounExplain">
+                <img src="images/l-icon.png" alt="">名词解释<a href="#"><img src="images/btn-right.png" alt=""></a>
+            </div>
+            
+        	<!--<ul>
+        		<li class="memu" id="problemDetail"><img src="http://ofl3qmlmx.bkt.clouddn.com/l-icon.png" alt="">注册与登录<a href="#"><img src="http://ofl3qmlmx.bkt.clouddn.com/btn-right.png" alt=""></a></li>
+        		<li class="memu" id="accountSafe"><img src="http://ofl3qmlmx.bkt.clouddn.com/l-icon.png" alt="">账户与安全<a href="#"><img src="http://ofl3qmlmx.bkt.clouddn.com/btn-right.png" alt=""></a></li>
+        		<li class="memu" id="withdraWdeposit"><img src="http://ofl3qmlmx.bkt.clouddn.com/l-icon.png" alt="">充值与提现<a href="#"><img src="http://ofl3qmlmx.bkt.clouddn.com/btn-right.png" alt=""></a></li>
+        		<li class="memu" id="investPayments"><img src="http://ofl3qmlmx.bkt.clouddn.com/l-icon.png" alt="">投资与回款<a href="#"><img src="http://ofl3qmlmx.bkt.clouddn.com/btn-right.png" alt=""></a></li>
+        		<li class="memu" id="couponAward"><img src="http://ofl3qmlmx.bkt.clouddn.com/l-icon.png" alt="">优惠与奖励<a href="#"><img src="http://ofl3qmlmx.bkt.clouddn.com/btn-right.png" alt=""></a></li>
+        		<li class="memu" id="nounExplain"><img src="http://ofl3qmlmx.bkt.clouddn.com/l-icon.png" alt="">名词解释<a href="#"><img src="http://ofl3qmlmx.bkt.clouddn.com/btn-right.png" alt=""></a></li>
+        		
+        	</ul>-->
+        </div>
+        
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+</body>
+</html>

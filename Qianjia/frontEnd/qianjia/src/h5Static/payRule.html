@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>充值规则</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/rules.css">
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <style>
+        html{
+           margin:0;
+            padding:0;
+			font-size:20px !important;
+        }
+
+        .paddingTop{
+            padding-top:2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page">
+	    <!--<c:if test="${isWap == 'true'}">-->
+	        <header class="bar bar-nav isWap">
+                <a class="icon icon-left" id="backId"></a>
+                充值规则
+            </header>
+		<!--</c:if>-->
+		<div class="content">
+            <div class="lys_content_remove paddingTop">
+                <div class="rule-wrap">
+		        	<ol class="rule-list">
+                        <li>1、钱夹用户在充值前需开通陕坝农商银行存管账户并绑定银行卡。</li>
+						<li>2、钱夹手机APP目前仅支持快捷充值。</li>
+						<li>3、大额充值请前往钱夹PC站操作，网址：<br />&nbsp;&nbsp;https://a.qianjialicai.com/shanba/temp/login.html</li>
+                        <li>4、每个账户只可绑定一张银行卡，作为充值/提现卡使用。</li>
+                        <li>5、充值过程产生的手续费由钱夹平台垫付。</li>
+                        <li>6、禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账号的使用。</li>
+                        <li>7、如有疑问请致电客服电话：400-831-6608；客服QQ:3012075246(已达上限)、3582292301、2912791253、2991906364，验证时请提供钱夹注册手机号码。</li>
+                        <li>8、快捷充值支持银行及限额：</li>
+					</ol>
+					<table class="rule-table">
+						<tbody>
+                            <tr>
+    							<th>银行名称</th>
+    							<th>单笔限额</th>
+                                <th>单日限额</th>
+    							<th>备注</th>
+    						</tr>
+    						<tr>
+    							<td>广发银行</td>
+    							<td>50万</td>
+                                <td>50万</td>
+    							<td>无</td>
+    						</tr>
+                            <tr>
+                                <td>平安银行</td>
+                                <td>500000</td>
+                                <td>无限额</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>中国民生银行</td>
+                                <td>50万</td>
+                                <td>无限额</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>中国银行</td>
+                                <td>5万</td>
+                                <td>50万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>中国工商银行</td>
+                                <td>5万</td>
+                                <td>5万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>兴业银行</td>
+                                <td>5万</td>
+                                <td>5万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>中国光大银行</td>
+                                <td>5万</td>
+                                <td>5万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>中国农业银行</td>
+                                <td>2万</td>
+                                <td>2万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>交通银行</td>
+                                <td>9999.99</td>
+                                <td>10万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>上海银行</td>
+                                <td>0.5万</td>
+                                <td>5万</td>
+                                <td>需开通银联在线支付</td>
+                            </tr>
+                            <tr>
+                                <td>中国建设银行</td>
+                                <td>0.5万</td>
+                                <td>2.5万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>浦发银行</td>
+                                <td>0.5万</td>
+                                <td>0.5万</td>
+                                <td>无</td>
+                            </tr>
+                            <tr>
+                                <td>中信银行</td>
+                                <td>0.5万</td>
+                                <td>0.5万</td>
+                                <td>单月1万元</td>
+                            </tr>
+                            <!--<tr>
+                                <td>邮政储蓄银行</td>
+                                <td>0.5万</td>
+                                <td>0.5万</td>
+                                <td>需开通银联在线支付</td>
+                            </tr>-->
+                            <tr>
+                                <td>北京银行</td>
+                                <td>0.5万</td>
+                                <td>0.5万</td>
+                                <td>无</td>
+                            </tr>
+    					</tbody>
+                    </table>
+                    <p>工行、农行、建行有失败次数限制，单日联系余额不足次数不得多于3次，失败次数不得多于3次</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+
+
+</body>
+</html>

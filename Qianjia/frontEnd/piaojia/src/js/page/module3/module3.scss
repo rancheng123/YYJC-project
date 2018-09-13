@@ -1,0 +1,138 @@
+.btn_slide{
+  width: 35px;
+  height: 30px;
+  background: url(../../../image/icon/slideBtn.png) no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+
+
+.module3{
+
+
+
+  .module3_head{
+    height: 84px;
+    line-height: 84px;
+    padding: 0 35px;
+
+    .module3_address{
+      font-size: 26px;
+    }
+    .module3_title{
+      font-size: 0.36rem;
+      text-align: center;
+    }
+    .module3_slideBtn{
+      text-align: right;
+
+    }
+  }
+
+  .messageBar{
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+  }
+
+  .module3_listWrap{
+    background: #cdcdcd;
+    padding-bottom: 14px;
+    .title{
+      height: 68px;
+      line-height: 68px;
+      position: relative;
+
+      .title_line{
+        border-top: 1px solid #fb343e;
+        position: absolute;
+        top: 34px;
+        width: 286px;
+        left: 235px;
+      }
+      .title_content{
+        background: #cdcdcd;
+        font-size: 28px;
+      }
+      .icon-clock{
+        margin-left: 8px;
+      }
+      .title_text{
+        margin: 0px 8px 0px 17px;
+      }
+    }
+
+    .item{
+      padding: 22px;
+      background: white;
+      margin: 0px 14px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      .item_title{
+        font-size: 26px;
+        color: #333333;
+        margin-top: 27px;
+      }
+      .percentNum{
+        font-size: 50px;
+        color: #f54a4b;
+      }
+      .percentHao{
+        color: #f54a4b;
+      }
+      .item_desc{
+        margin-top: 25px;
+        position: relative;
+      }
+
+      .item_desc_item_value{
+        height: 66px;
+      }
+      .item_desc_item_name{
+        color: #999999;
+        font-size: 20px;
+      }
+      .btn-red{
+        margin-top: 20px;
+      }
+      .year-shouyi{
+        width: 80px;
+        height: 65px;
+        display: inline-block;
+        position: absolute;
+        top: -6px;
+        left: 100px;
+      }
+
+      .item-progress{
+        height: 4px;
+        background: #dddddd;
+        margin-top: 26px;
+      }
+      .item-progress-inner{
+        height: 4px;
+        background: #f54a4b;
+      }
+
+      .item-ketou{
+        height: 34px;
+        line-height: 50px;
+        color: #666666;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .footer{
+    height: 100px;
+    background: #f6f4f5;
+  }
+
+}
+
+
+
+
+
+

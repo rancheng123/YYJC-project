@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>名词解释</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        docEl.style.fontSize = clientWidth / 320 * 20 + 'px';
+                    };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <script src="./js/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+	<link rel="stylesheet" type="text/css" href="css/cash.css">
+	<link rel="stylesheet" type="text/css" href="css/questions.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/common.css">
+    <style>
+        .list-ul li{
+            list-style: none;
+        }
+        .lys-content .list-ul{
+            margin:0;
+        }
+		.paddingTop{
+            padding:2.2rem 0 0 0;
+        }
+		.detail-ul{
+			padding: 0;
+			font-size: 0.65rem;
+		}
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div style="background:#f1f1f1;">
+			<!--<header class="barheader bar-nav isWap">
+				<a class="icon icon-left pull-left" id="backId"></a>
+				<h1 class="title">名词解释</h1>
+			</header>-->
+			<header class="bar bar-nav isWap">
+				<a class="icon icon-left" id="backId"></a>
+				名词解释
+			</header>
+        <div class="lys_content_remove lys-content paddingTop">
+        	<ul class="list-ul" >
+        		<li>
+        			<div>快捷充值支付</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			
+        			<ul class="detail-ul" >
+        				<li><span class="ul-title"></span></li>
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开通陕坝农商银行存管账户后，通过手机钱夹APP进行充值、投资时，只需输入正确的支付密码，不需要跳转到银行页面进行支付，即可便捷、快速地完成支付。</li>
+        			</ul>
+        			
+        		</li>
+        		<li>
+        			<div>投资中</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li><span class="ul-title">投资中包括几种状态，如下：</span></li>
+        				<li>(1)&nbsp;&nbsp;投资处理中</li>
+        				<li class="liPding">投资人提交支付订单，但未支付成功，在我的-我的投资-投标中可以找到未支付订单。</li>
+        				<li>(2)&nbsp;&nbsp;支付成功</li>
+        				<li class="liPding">投资人提交支付订单，并支付成功，在我的-我的投资-投标中可以看到支付成功，等待结标状态的订单。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>还款中</div><div><img src="images/icon-bottom.png" alt=""></div>
+        				<ul class="detail-ul">
+	        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当融资项目开始结标并计息，项目进入还款中状态。</li>
+	        			</ul>
+        		</li>
+        		<li>
+        			<div>满标</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当融资项目进度达到100%，即项目满标。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>提现</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当钱夹用户需要将银行存管账户中的资金转移的时候，可用申请提现，提现将金额提至已绑定的经过实名认证的客户银行卡中。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>预期年化回报率</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指把当前回报率（日回报率、周回报率、月回报率）换算成年从而得出的回报率。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>可用余额</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指您的账户当前可支配的金额。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>在投资金</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指您已投资且未还款的全部本金金额。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>预期收益</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指您已投资且未还款的全部收益金额。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>累计收益</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指您已投资且已还款的全部收益金额。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>预期总资产</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指您的在投本金、预期收益、可用余额的总和。</li>
+        			</ul>
+        		</li>
+        		<li>
+        			<div>标的(biāo dì)</div><div><img src="images/icon-bottom.png" alt=""></div>
+        			<ul class="detail-ul">
+        				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;指借款用户发布的包含其借款相关说明信息的借款申请。</li>
+        			</ul>
+        		</li>
+        	</ul>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$(".list-ul>li").attr('isOpen',false);
+	$(".list-ul>li").click(function(){
+		$(this).siblings().children('.detail-ul').css("display","none");
+		$(this).siblings().find("img").attr("src","images/icon-bottom.png");
+		
+		if( $(this).attr('isOpen')=='false' ){
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).attr('isOpen',true);
+			$(this).find("img").attr("src","images/icon-top.png");
+			$(this).find(".detail-ul").css("display","block");
+		}else{
+			$(".list-ul>li").attr('isOpen',false);
+			$(this).find("img").attr("src","images/icon-bottom.png");//http://ofl3qmlmx.bkt.clouddn.com/icon-bottom.png 
+			$(this).find(".detail-ul").css("display","none");
+			$(this).attr('isOpen',false);
+		}
+		
+	}) 
+})
+</script>
+<script src="js/staticCommon.js"></script>
+</body>
+</html>

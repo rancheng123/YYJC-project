@@ -1,0 +1,30 @@
+//消息详情
+.message-detail{
+    padding:20px;
+
+    .m-time{
+        text-align: center;
+        padding: 24px 0px;
+        span{
+            display: inline-block;
+            height: 33px;
+            line-height: 33px;
+            font-size: 24px;
+            padding: 0px 12px;
+            color: #2b2b2b;
+            border-radius: 20px;
+            background-color: #dddddd;
+        }
+    }
+    .m-text{
+        padding:24px 0px;
+        p{
+            line-height: 48px;
+            color: #4c4c4c;
+            font-size: 26px;
+            padding: 27px 24px;
+            background-color: #fff;
+            border-radius: 15px;
+        }
+    }
+}

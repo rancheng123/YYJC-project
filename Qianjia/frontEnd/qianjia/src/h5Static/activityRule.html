@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>活动规则</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        //动态计算根元素的font-size
+        (function(){
+            function setFontSize(){
+                document.documentElement.style.fontSize = 20*document.documentElement.clientWidth/375+'px';
+            }
+            setFontSize();
+            window.onload = window.onresize = function(){
+                setFontSize();
+            }
+          })();
+    </script>
+    <style>
+        html,body{margin:0;padding:0;background: #f5f5f5;}
+
+        .paddingTop{padding-top:2.5rem;}
+        .activityRule{font-size: 0.65rem;margin: 0.75rem;background: #ffffff;color: #666666;padding-top: 1.7rem;}
+        .activityRule .bigHead{text-align: center;position: relative;margin: 0 1.25rem 0.68rem 1.25rem;}
+        .activityRule .bigHead:after{content:"";display:block;width: 100%;height: 1px;background: #bcbcbc;position: absolute;left: 0px;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+        .activityRule .bigHead span{display:inline-block;width:5.6rem;line-height: 0.9rem;position: relative;z-index: 2;padding: 0rem 0.4rem;font-size: 0.65rem;background: #fff;color: #333333;vertical-align: top;}
+        .activityRule .bigHead span:before{content:"";display:block;width: 0.2rem;height: 0.2rem;background: #bcbcbc;border-radius: 50%;position: absolute;left: -0.18rem;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+        .activityRule .bigHead span:after{content:"";display:block;width: 0.2rem;height: 0.2rem;background: #bcbcbc;border-radius: 50%;position: absolute;right: -0.18rem;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+        .activityRule .ruleStep{line-height: 1.15rem;padding: 0.5rem 1.75rem;margin: 0px;}
+        .activityRule .zeroStep_img{display: block;width: 14.8rem;margin: 1rem auto;}
+        .activityRule .rule-box{padding: 1rem 0rem 2rem 0rem;}
+        .activityRule .rule-box .bigHead{margin-bottom: 1rem;}
+        .activityRule .rule-box .rule_text{line-height: 1.15rem;padding: 0 1.75rem;margin: 0px;}
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page">
+	    <!--<c:if test="${isWap == 'true'}">-->
+	        <header class="bar bar-nav isWap">
+                <a class="icon icon-left" id="backId"></a>
+                活动规则
+            </header>
+		<!--</c:if>-->
+		<div class="content">
+            <div class="lys_content_remove paddingTop">
+                <div class="activityRule">
+                    <h3 class="bigHead">
+                        <span>
+                            获得返现步骤
+                        </span>
+                    </h3>
+                    <p class="ruleStep">1.您参加本次活动，在指定商户成功消费指定金额，将获得在钱夹领取返现资格；</p>
+                    <img src="./images/zeroStep1.jpg" alt="" class="zeroStep_img">
+                    <p class="ruleStep">2.领取返现资格：您需要注册登录钱夹，在钱夹“0元购”活动页面中输入活动订单号，点击“领取”即可；</p>
+                    <img src="./images/zeroStep2.jpg" alt="" class="zeroStep_img">
+                    <p class="ruleStep">3.返现到账：您需要钱夹中进行绑卡开户操作方可在活动指定日期收到返现；</p>
+                    <img src="./images/zeroStep3.jpg" alt="" class="zeroStep_img">
+                    <p class="ruleStep">4.提现到银行卡：在钱夹中点击“提现”，按步骤操作即可；</p>
+                    <img src="./images/zeroStep4.jpg" alt="" class="zeroStep_img">
+                    <div class="rule-box">
+                        <h3 class="bigHead">
+                            <span>
+                                活动规则
+                            </span>
+                        </h3>
+                        <p class="rule_text">1.返现金额将从激活之日起开始计算返现到账时间，到期后自动将活动返现转入您在钱夹开设的账户中；</p>
+                        <p class="rule_text">2.你需要在活动有效期内领取返现资格并进行绑卡开户操作方可在活动规定的日期收到返现；</p>
+                        <p class="rule_text">3.如您在活动有效期内未领取返现资格或未进行绑卡开户操作，则默认你自动放弃获得返现资格，活动过期后您将无法再获得本次活动返现；</p>
+                        <p class="rule_text">4.请确保开户信息正确，以免返现不能及时到账；</p>
+                        <p class="rule_text">5.提现手续费依照平台提现规则为准。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+
+
+</body>
+</html>

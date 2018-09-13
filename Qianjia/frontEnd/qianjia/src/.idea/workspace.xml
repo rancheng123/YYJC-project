@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d0e0b59-3614-4bc3-ac1d-fd11df54df9d" name="Default" comment="" />
+    <ignored path="src.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1697551767">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="src" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>for</find>
+      <find>Login</find>
+      <find>baseURL</find>
+      <find>popagation</find>
+      <find>/module2</find>
+      <find>map</find>
+      <find>items</find>
+      <find>projectState</find>
+      <find>stateBn</find>
+      <find>moneyProgress</find>
+      <find>staten</find>
+    </findStrings>
+    <dirStrings>
+      <dir>H:\test\webpack-react-redux2\frontEnd\src</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../nginx-1.7.4/conf/nginx.conf" />
+        <option value="G:/知识/知识/nginx学习/nginx配置文件解读/nginx配置文件解读.js" />
+        <option value="H:/需求/临时任务/login.html" />
+        <option value="H:/需求/临时任务/regist.html" />
+        <option value="H:/需求/临时任务/aboutMoney.html" />
+        <option value="H:/需求/临时任务/concatUs.html" />
+        <option value="H:/需求/临时任务/index.html" />
+        <option value="$PROJECT_DIR$/../../build/server.js" />
+        <option value="$PROJECT_DIR$/../../package.json" />
+        <option value="$PROJECT_DIR$/js/module/login/antd/picker.js" />
+        <option value="$PROJECT_DIR$/js/asset/componentStore.js" />
+        <option value="$PROJECT_DIR$/js/index2.js" />
+        <option value="G:/知识/知识/JS/原生JS/ES6/ES6学习.js" />
+        <option value="$PROJECT_DIR$/../../../webpack/dev/js/index.js" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/../../build/webpack.config.js" />
+        <option value="$PROJECT_DIR$/../../.gitignore" />
+        <option value="$PROJECT_DIR$/js/widget/dialog/test.js" />
+        <option value="G:/知识/知识/JS/第三方工具/react/react调试工具.js" />
+        <option value="G:/知识/知识/JS/前端架构/优异精彩/带队经验 教训总结.js" />
+        <option value="$PROJECT_DIR$/js/module/login/test/test.js" />
+        <option value="$PROJECT_DIR$/js/module/login/antd/test.js" />
+        <option value="G:/知识/知识/JS/第三方工具/react/react源码学习.js" />
+        <option value="$PROJECT_DIR$/js/widget/dialog/dialog.js" />
+        <option value="$PROJECT_DIR$/js/widget/dialog/dialog.scss" />
+        <option value="$PROJECT_DIR$/js/module/navTitle/MultiMenu.scss" />
+        <option value="$PROJECT_DIR$/js/widget/picker/picker.js" />
+        <option value="$PROJECT_DIR$/scss/font.scss" />
+        <option value="$PROJECT_DIR$/js/page/homeModule/homeModule.scss" />
+        <option value="$PROJECT_DIR$/js/module/projectList/projectList.scss" />
+        <option value="$PROJECT_DIR$/js/module/navTitle/navTitle.js" />
+        <option value="$PROJECT_DIR$/js/module/navTitle/navTitle.scss" />
+        <option value="$PROJECT_DIR$/js/module/projectList/projectList.js" />
+        <option value="$PROJECT_DIR$/js/page/homeModule/homeModule.js" />
+        <option value="$PROJECT_DIR$/js/page/myInvest/myInvest.scss" />
+        <option value="$PROJECT_DIR$/js/page/myInvest/myInvest.js" />
+        <option value="$PROJECT_DIR$/js/page/set/set.js" />
+        <option value="$PROJECT_DIR$/js/module/backbar/backbar.js" />
+        <option value="F:/nodejs_lianxi/nodejs-1.js" />
+        <option value="F:/nodeJS_lianxi/nodejs-1.js" />
+        <option value="F:/nodeJS_lianxi/ECMAscript/1.js" />
+        <option value="F:/nodeJS_lianxi/ECMAscript/module/module-1.js" />
+        <option value="F:/nodeJS_lianxi/module/module-2.js" />
+        <option value="F:/nodeJS_lianxi/module/createModule-1.js" />
+        <option value="F:/nodeJS_lianxi/module/module-1.js" />
+        <option value="F:/nodeJS_lianxi/module/process.js" />
+        <option value="F:/nodeJS_lianxi/创建项目文件.js" />
+        <option value="F:/nodeJS_lianxi/2.js" />
+        <option value="F:/nodeJS_lianxi/3.js" />
+        <option value="F:/nodeJS_lianxi/WebRoot/index.html" />
+        <option value="F:/nodeJS_lianxi/4.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="86" />
+    <option name="y" value="144" />
+    <option name="width" value="1440" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptLanguageLevel" value="JSX" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\YYJC\Qianjia\frontEnd\src\js\module" />
+      <recent name="F:\YYJC\Qianjia\frontEnd\src\image" />
+      <recent name="F:\YYJC\Qianjia\frontEnd\src\fonts\black" />
+      <recent name="H:\test\webpack-react-redux2\frontEnd\src\js\module\login\antd" />
+      <recent name="H:\test\webpack-react-redux2\frontEnd\src\image" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.1.js">
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug />
+      <method />
+    </configuration>
+    <configuration name="1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="F:/nodeJS_lianxi/ECMAscript/1.js" working-dir="$PROJECT_DIR$/../..">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="build/a.js" working-dir="$PROJECT_DIR$/../..">
+      <method v="2" />
+    </configuration>
+    <configuration name="a" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="build/a.js" working-dir="$PROJECT_DIR$/../..">
+      <method v="2" />
+    </configuration>
+    <configuration name="nodejs-1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="F:/nodeJS_lianxi/nodejs-1.js" working-dir="$PROJECT_DIR$/../..">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="$PROJECT_DIR$/../../build/server.js" working-dir="$PROJECT_DIR$/../..">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
+      <setting name="nodePath" value="C:/Program Files/nodejs/node" />
+      <envs />
+      <setting name="nodeunitModuleDir" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="testType" value="JS_FILE" />
+      <setting name="jsFile" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter />
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.a" />
+      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="Node.js.nodejs-1.js" />
+      <item itemvalue="Node.js.1.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.1.js" />
+        <item itemvalue="Node.js.nodejs-1.js" />
+        <item itemvalue="Node.js.server.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d0e0b59-3614-4bc3-ac1d-fd11df54df9d" name="Default" comment="" />
+      <created>1488253615299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488253615299</updated>
+      <workItem from="1489457740921" duration="1112000" />
+      <workItem from="1489459205043" duration="643000" />
+      <workItem from="1489461199063" duration="1572000" />
+      <workItem from="1489469071205" duration="17274000" />
+      <workItem from="1489543510979" duration="11796000" />
+      <workItem from="1490061128334" duration="21429000" />
+      <workItem from="1490146654363" duration="28879000" />
+      <workItem from="1536664653487" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="82738000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="86" y="144" width="1440" height="800" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18111347" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.6014799" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24861111" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5250321" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32980973" />
+      <window_info anchor="bottom" id="Application Servers" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../build/a.js</url>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../build/a.js</url>
+          <line>5</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../build/a.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="showName()" language="JavaScript" />
+        <watch expression="b" language="JavaScript" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/asset/componentStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/widget/dialog/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/widget/dialog/dialog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/widget/dialog/dialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page/module1/module1.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="63" column="1" selection-start-line="58" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/widget/picker/data.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/react注意事项.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/widget/picker/picker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/font.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/widget/picker/picker.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/base/common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/base/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page/module1/module1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/widget/cssTransitoin/cssTransitoin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page/set/set.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js" />
+    <entry file="file://$PROJECT_DIR$/js/module/backbar/backbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="593" column="50" selection-start-line="593" selection-start-column="50" selection-end-line="593" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page/set/set.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/nodeJS_lianxi/nodejs-1.js" />
+    <entry file="file://F:/nodeJS_lianxi/ECMAscript/1.js" />
+    <entry file="file://F:/nodeJS_lianxi/module/module-2.js" />
+    <entry file="file://F:/nodeJS_lianxi/module/createModule-1.js" />
+    <entry file="file://F:/nodeJS_lianxi/module/process.js" />
+    <entry file="file://F:/nodeJS_lianxi/module/module-1.js" />
+    <entry file="file://F:/nodeJS_lianxi/创建项目文件.js" />
+    <entry file="file://F:/nodeJS_lianxi/node合并文件.js" />
+    <entry file="file://F:/nodeJS_lianxi/2.js" />
+    <entry file="file://F:/nodeJS_lianxi/qianjiaPC/index.html" />
+    <entry file="file://F:/nodeJS_lianxi/WebRoot/index.html" />
+    <entry file="file://F:/nodeJS_lianxi/3.js" />
+    <entry file="file://F:/nodeJS_lianxi/4.js" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

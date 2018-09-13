@@ -1,0 +1,205 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>测评结果</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/config.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+	<style>
+		html,body{
+			height:100%;
+			width:100%;
+            padding:0;
+            margin:0;
+			font-size:20px !important;
+		}
+		.content{
+			min-height:100%;
+			width:100%;
+			background:url(/h5Static/images/wqdc_bg.png)no-repeat center;
+            border-top: 1px solid #e75135;
+		}
+		.open{
+			width: 100%;
+			height: 19.5rem;
+			background: url(/h5Static/images/risk_result.png)no-repeat;
+			background-size: 100% 100%;
+			margin-top: 1rem;
+			margin-top: 3rem;
+		}
+		.introduce{
+		    padding-top: 7rem;
+		}
+		.introduce h4{
+			text-align:center;
+			color:#f89f1c;
+			font-size:18px;
+		}
+		.introduce p{
+			width:60%;
+			font-size:16px;
+			margin: 0 auto;
+			margin-top: 5%;
+		}
+		.btn_open div:first-child{
+			float: left;
+			margin-left: 10%;
+			/* position: fixed; */
+            height: 2rem;
+			line-height: 2rem;
+			width: 6.25rem;
+            text-align: center;
+            /* bottom: 50px; */
+            margin-top:2rem;
+            background: #fff;
+            color:#ff555d;
+            font-size: 0.75rem;
+            border-radius: 1.5rem;
+		}
+		.btn_open div:last-child{
+			float:right;
+			margin-right: 10%;
+			/* position: fixed; */
+            height: 2rem;
+			line-height: 2rem;
+			width: 6.25rem;
+            text-align: center;
+            /* bottom: 50px; */
+            margin-top:2rem;
+            background: #fbc527;
+            color: #fff;
+            font-size: 0.75rem;
+             border-radius: 1.5rem;
+		}
+		.btn_open:after{
+			content:'';
+			display:block;
+			clear:both;
+			visibility:hidden;
+		}
+	</style>
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page" style="background:#ebebeb;">
+    	<!--<c:if test="${isWap=='YES'}">-->
+             <header class="bar bar-nav isWap">
+                    <a class="icon icon-left" id="backId"></a>
+                    测评结果
+            </header>
+        <!--</c:if>-->
+		<div class="content">
+            <div class="open">
+            	<div class="introduce">
+            		<h4 id="rankText"></h4>
+            		<p id="rankDesc"></p>
+            	</div>
+            </div>
+            <div class="btn_open">
+            	<div class="left">重新测评</div>
+            	<div class="right">去投资</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" chartset="UTF-8">
+//$.init();
+
+$(document).ready(function(){
+	function getUrlParam(name){
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+		var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+		if (r!=null) return unescape(r[2]); return null; //返回参数值
+	}
+	var myToken;
+	//console.log('token:',getUrlParam('token'))
+	var isWap = getUrlParam('isWap');
+	if(isWap){
+		myToken = getUrlParam('token');
+		//alert('浏览器token:'+myToken);
+		//alert('王俊token初次判断');
+	}else{
+		$('.isWap').css('display','block');
+		myToken = JSON.parse(window.localStorage.getItem('user')).token;
+		//alert('李token初次判断');
+	}
+	$.ajax({
+		type : "POST",
+		url : config.api+"/qj/front/v1/my/getRiskTestRankAndScore",
+		cache : false,
+		dataType : "json",
+		contentType:"application/json",
+		data : JSON.stringify({}),
+		headers: {
+			"qpToken":myToken
+		},
+		success : function(resMap) {
+			if (parseInt(resMap.resultCode) == 0) {
+				//console.log(resMap.data);
+				//alert(resMap.score);
+				//alert(resMap.rank);
+
+				var rank = parseInt(resMap.data.rank);
+				var rankText = "";
+				var rankDesc = "";
+				if (rank == 1) {
+					rankText = "保守型";
+					rankDesc = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您是一个保守型的投资者，在投资中，您较不能承受因风险造成的本金损失。根据您的风险承受能力，建议您选择我司平台的7天标进行投资。";
+				} else if (rank == 2) {
+					rankText = "谨慎型";
+					rankDesc = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您是一个谨慎型的投资者，在投资中，您会全面衡量风险和权益，您会谨慎考量投资中的风险，并具有有限的风险承受能力。建议您选择我司平台的15天内标进行投资。";
+				} else if (rank == 3) {
+					rankText = "稳健型";
+					rankDesc = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您是一个稳健型的投资者，在投资中，您有一定的风险承受能力，对投资收益比较敏感，期望通过长期且持续的投资获得高于平均水平的回报，通常更注重较长期限内的平均收益。建议您选择我司平台的30天内标进行投资。";
+				} else if (rank == 4) {
+					rankText = "进取型";
+					rankDesc = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您是一个进取型的投资者，在投资中，您有中高的风险承受能力，愿意承担可预见的投资风险去获取更多的收益。您可选择我司平台的任意项目标的进行投资。";
+				}
+
+				$("#rankText").html(rankText);
+				$("#rankDesc").html(rankDesc);
+
+			}else if(resMap.resultCode == '20001'){
+				console.log('过期token');
+				location.href='/login';		
+			}
+		},
+		error : function() {
+			//alert('fail!');
+		}
+	});
+	$('.btn_open .left').click(function(){
+		//alert('你选择了重新测试！')
+		window.location = "/h5Static/risk_open.html";
+	})
+	$('.btn_open .right').click(function(){
+		window.location = "/home";
+		//alert('你选择了去投资！')
+	})
+
+});
+</script>
+<script src="js/staticCommon.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+//消息中心
+.message-list{
+
+    .viewListWrap{
+        padding: 10px 0px;
+        box-sizing: border-box;
+    }
+    li,.list-item{
+        padding: 10px 0px;
+    }
+    .m-item{
+        display: flex;
+        background-color: #fff;
+    }
+    .m-icon-box{
+        flex: 1;
+
+        display: flex;
+        justify-content: center;
+
+        padding-left: 20px;
+        .m-icon{
+            margin-top: 27px;
+            position: relative;
+            .m-dot{
+                width: 8px;
+                height: 8px;
+                background-color: #fb343e;
+                position: absolute;
+                right: -5px;
+                top: -4px;
+                border-radius: 50%;
+
+            }
+        }
+    }
+    .m-text{
+        flex: 2;
+
+        max-width: 60%;
+        padding: 0px 15px 0px 15px;
+        h3{
+            font-size: 28px;
+            color: #282828;
+            height: 54px;
+            line-height: 54px;
+            padding-top: 21px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        p{
+            font-size: 24px;
+            color: #878787;
+            height: 48px;
+            line-height: 48px;
+            padding-bottom: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .m-date{
+        flex: 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        text-align: right;
+        padding-right: 20px;
+        font-size: 24px;
+        color: #878787;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

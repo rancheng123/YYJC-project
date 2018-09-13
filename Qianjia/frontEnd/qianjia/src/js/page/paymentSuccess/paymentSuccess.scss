@@ -1,0 +1,81 @@
+@import "../../../scss/base/commonVar.scss";
+.paymentSuccess-wrap{
+    .pay-flow{
+        height: 200px;
+        padding-top: 50px;
+        background-color: #ff3e26;
+        color: #fff;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        .f-box{
+            float: left;
+        }
+        .f-icon{
+            display: block;
+            width: 72px;
+            height: 72px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+            margin:0px auto;
+            background-color: #ff3e26;
+            position: relative;
+            z-index: 2;
+        }
+        .f-icon1{
+            background-image: url(../../../image/icon/pay1.1.png);
+        }
+        .f-icon2{
+            background-image: url(../../../image/icon/pay2.1.png);
+        }
+        .f-icon3{
+            background-image: url(../../../image/icon/pay3.1.png);
+        }
+        .f-text{
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .f-line{
+            float: left;
+            width: 178px;
+            height: 3px;
+            background-color: #fff;
+            margin-top: 35px;
+            margin: 35px -30px 0px -30px;
+            .l-over{
+                width: 60%;
+                height: 100%;
+                background-color: #ffcfc9;
+                position: relative;
+            }
+            .o-circle{
+                width: 8px;
+                height: 8px;
+                background-color: #fff;
+                border: 8px solid #ffcfc9;
+                border-radius: 50%;
+                position: absolute;
+                right: 9px;
+                top: -9px;
+            }
+        }
+    }
+    .pay-detail{
+        background-color: #fff;
+        border-bottom: 2px solid $borderColor;
+        .g-d-list:last-child{
+            border-bottom: none;
+        }
+    }
+    .pay-present{
+        padding-top: 15px;
+    }
+    .g-present-box{
+        .g-text{
+            width: 440px;
+        }
+    }
+}

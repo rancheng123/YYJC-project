@@ -1,0 +1,142 @@
+.expenseDetail-wrap{
+
+    .e-tip{
+        background: #fff5d4;
+        display: flex;
+        align-items: center;
+        min-height: 70px;
+        i{
+            width: 32px;
+            height: 28px;
+            background-image: url(../../../image/icon/trumpet.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin: 0px 20px 0px 30px;
+        }
+        span{
+            color: #fa7000;
+            font-size: 22px;
+            line-height: 30px;
+            padding: 20px 0px 20px 0px;
+            width: 660px;
+        }
+    }
+    .e-show{
+        height: 280px;
+        background: #fb343e;
+        padding-top: 50px;
+        padding-left: 36px;
+        color: #ffffff;
+        position: relative;
+        h4{
+            font-size: 28px;
+            line-height: 46px;
+        }
+        .e-money{
+            line-height: 86px;
+            font-size: 58px;
+            span{
+                font-size: 30px;
+            }
+        }
+        .e-rencent{
+            font-size: 26px;
+            text-indent: 36px;
+            width: 100%;
+            height: 76px;
+            line-height: 76px;
+            background: rgba($color: #000000, $alpha: 0.1);
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+    .e-list{
+        .g-bill-detail{
+            background: #ffffff;
+            padding: 0px 0px 0px 0px;
+            .e-year{
+                padding: 14px 360px 0px 36px;
+                height: 56px;
+                line-height: 56px;
+                font-size: 26px;
+                background: #f1f1f1;
+            }
+            .g-d-list{
+                padding: 0px 0px 0px 36px;
+                li{
+                    border-bottom: 2.5px solid #dddddd;
+                
+                    h4{
+                        color: #202020;
+                        font-size: 32px;
+                        width: 454px;
+                        height: 40px;
+                        line-height: 40px;
+                        padding: 36px 0px 6px 0px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    p{
+                        color: #999999;
+                        font-size: 20px;
+                        line-height: 30px;
+                        padding-bottom: 26px;
+                    }
+                    span{
+                        padding-right: 36px;
+                        line-height: 50px;
+                        height: 50px;
+                        width: 220px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: #333333;
+                        font-size: 40px;
+                    }
+                }
+                li:last-child{
+                    border-bottom: none;
+                }
+                .add-box{
+                    span{
+                        color: #fb343e;
+                        font-size: 40px;
+                        
+                    }
+                }
+            }
+            .g-d-list:last-child{
+                border: none;
+            }
+        }
+
+        .noData{
+            text-align: center;
+            padding: 140px 20px;
+            i{
+                width: 173px;
+                height: 180px;
+                background-image: url(../../../image/icon/consume_icon.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                display: block;
+                margin: 0px auto;
+            }
+            
+            h2{
+                font-size: 30px;
+                color: #666666;
+                line-height: 40px;
+                margin-top: 35px;
+            }
+            p{
+                font-size: 24px;
+                color: #999999;
+                line-height: 34px;
+                padding: 10px 0px;
+            }
+        }
+    }
+}

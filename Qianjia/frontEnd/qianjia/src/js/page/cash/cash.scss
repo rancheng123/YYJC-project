@@ -1,0 +1,439 @@
+@import "../../../scss/base/commonVar.scss";
+.g-cash-wrap{
+    .g-cash-head{
+        height: 204px;
+        padding: 22px 100px 0px 100px;
+        background-color: #fd4633;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        line-height: 34px;
+        .g-h-box{
+            //width: 114px;
+            padding: 0 5px;
+            i{
+                display: block;
+                width: 66px;
+                height: 66px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                margin: 0px auto;
+            }
+
+            p{
+                margin-top: 15px;
+            }
+        }
+        .g-balance{
+            i{
+                background-image: url(../../../image/icon/dollar.png);
+                background-size: 62px 62px;
+                background-position: center center;
+            }
+        }
+        .g-bank{
+            padding: 0 15px;
+            i{
+                background-image: url(../../../image/icon/bank.png);
+            }
+        }
+        .g-arrow{
+            width: 187px;
+            height: 12px;
+            background-image: url(../../../image/icon/arrow.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 29px 40px 0px 0px;
+        }
+    }
+    .g-info{
+        background-color: #fff;
+        .g-line{
+            padding: 0px 30px;
+            border-bottom: 2.5px solid $borderColor;
+            display: flex;
+            align-items: center;
+        }
+        .g-line:first-child{
+            height: 100px;
+
+        }
+        .g-line:last-child{
+            border-bottom: none;
+        }
+        .g-icon{
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .g-star{
+            width: 38px;
+            height: 38px;
+            background-image: url(../../../image/icon/star.png);
+        }
+        .g-text{
+            font-size: 28px;
+            color: #666;
+            padding-left: 22px;
+        }
+        .g-bold{
+            color: #333;
+        }
+        .g-card{
+            padding-right: 0px;
+            display: block;
+            position: relative;
+            .zhedang-border{
+                width: 78px;
+                height: 6px;
+                background-color: #fff;
+                position: absolute;
+                left: 0px;
+                top: -3px;
+            }
+        }
+        .g-line2{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+        }
+        .g-i{
+            width: 30px;
+            height: 30px;
+            background-image: url(../../../image/icon/i.png);
+        }
+        .g-text2{
+            flex:2;
+            height: 60px;
+            line-height: 60px;
+            font-size: 22px;
+            color: #999999;
+            border-bottom: 2.5px solid $borderColor;
+
+            margin-left: 17px;
+            padding-left: 13px;
+        }
+        .g-line3{
+            width: 100%;
+            height: 82px;
+            line-height: 82px;
+            color: #666666;
+            font-size: 28px;
+            padding-left: 60px;
+            position: relative;
+            .g-bold{
+                padding-left: 20px;
+                position: relative;
+            }
+            .g-quick{
+                font-size: 16px;
+                color: #fff;
+                height: 22px;
+                line-height: 22px;
+                padding: 0 3px;
+                background-color: $commonColorRed;
+                border-radius: 5px;
+                position: absolute;
+                right: -80px;
+                top: 6px;
+                b{
+                    position: relative;
+                    z-index: 2;
+                    font-weight: normal;
+                }
+            }
+            .g-quick:after{
+                content: '';
+                width: 0.13rem;
+                height: 0.13rem;
+                position: absolute;
+                left: -0.05rem;
+                top: 0.05rem;
+                transform: rotate(39deg);
+                background-color: $commonColorRed;
+                z-index: 1;
+            }
+            .g-bank-new{
+                width: 38px;
+                height: 29px;
+                background-image: url(../../../image/icon/bank_new.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .g-tixian{
+            height: 189px;
+            justify-content: space-between;
+        }
+        .g-tx-left{
+            display: flex;
+            align-items: center;
+        }
+        .g-yuan{
+            width: 37px;
+            height: 48px;
+            background-image: url(../../../image/icon/yuan.png);
+        }
+        .g-input{
+            border: none;
+            margin-left: 26px;
+            font-size: 36px;
+            color: #333;
+            padding: 30px 0px;
+        }
+        ::-webkit-input-placeholder { /* WebKit browsers */
+        　　color:#dfdfdf;
+        }
+        .g-text3{
+            color: $commonColorRed;
+            font-size: 28px;
+            padding: 20px 0px 20px 30px;
+            white-space: nowrap;
+        }
+
+        .withdraw-type{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110px;
+            padding:0px;
+            .w-t-item{
+                flex: 1;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                position: relative;
+                .i-circle{
+                    width: 38px;
+                    height: 38px;
+                    box-sizing: border-box;
+                    border: 2.5px solid #cccccc;
+                    margin-right: 22px;
+                    border-radius: 50%;
+                }
+                h4{
+                    font-size: 30px;
+                }
+                span{
+                    font-size: 24px;
+                }
+                .i-line{
+                    width: 2.5px;
+                    height: 66px;
+                    background-color: #cccccc;
+                    position: absolute;
+                    right: 0px;
+                    top: 22px;
+                }
+            }
+
+
+            .w-t-item.checked{
+                .i-circle{
+                    border: none;
+                    background-image: url('../../../image/icon/selected_btn_ok.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+    .g-btn-tip{
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        padding: 0 30px 100px 30px;
+        position: relative;
+        // height: 86px;
+        .g-txt{
+            font-size: 20px;
+            color: #666;
+            // float: left;
+            // width: 79%;
+            line-height: 38px;
+            h3{
+                color: #333333;
+                font-size: 22px;
+                line-height: 40px;
+                padding: 16px 160px 6px 0;
+            }
+            .rule3{
+                line-height: 28px;
+                padding: 12px 0px 3px 0px;
+            }
+        }
+        .clipboard-box{
+            border: none;
+            -webkit-appearance: none;
+            background: transparent;
+            text-align: left;
+            padding: 0px;
+            color: #666;
+        }
+        .g-link{
+            font-size: 28px;
+            color: #f82b37;
+            padding: 20px 30px 20px 0px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            // float: right;
+        }
+    }
+
+
+
+
+
+}
+
+
+.g-cash-main-box{
+
+    .g-bottom-btn{
+        .g-btn{
+            font-size: 32px;
+            color: #fff;
+            width: 100%;
+            height: 90px;
+            line-height: 90px;
+            background-color: $commonColorRed;
+            text-align: center;
+            position: fixed;
+            left: 0px;
+            bottom: 0px;
+            z-index: 2;
+        }
+    }
+
+    .bankPassword{
+        position:fixed;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: transparent;
+        .mengceng{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .main-box{
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background: #fff;
+        }
+        .bankInput{
+            padding:0 30px;
+        }
+        li:first-child{
+            font-size:30px;
+            text-align: center;
+            line-height: 98px;
+            height:100px;
+            border-bottom: 2.5px solid #ccc;
+        }
+        li:nth-child(2){
+            font-size:26px;
+            color:#999;
+            padding-left: 30px;
+            line-height: 100px;
+            height: 100px;
+        }
+        li:last-child{
+            font-size: 30px;
+            color:#fb343e;
+            text-align: right;
+            height: 80px;
+            padding-bottom: 50px;
+
+        }
+        .passwordBtn{
+            float: right;
+            line-height: 80px;
+            padding: 0px 30px 0px 60px;
+        }
+        .close{
+            position: absolute;
+            top:0px;
+            left:auto;
+            right: 0px;
+            width: 28px;
+            height:28px;
+            padding: 35px 35px 35px 50px;
+        }
+    }
+
+    .my-book-box-pay{
+        z-index: 6;
+        .b-main{
+            width: 600px;
+            height: 450px;
+            margin-left: -300px;
+            margin-top: -225px;
+        }
+        .tip{
+            line-height: 0.46rem;
+            font-size: 0.28rem;
+            margin-top: 0.4rem;
+            a{
+                color: rgb(10, 146, 221);
+            }
+        }
+        .know-btn{
+            width: 1.8rem;
+            text-align: center;
+            height: 0.76rem;
+            line-height: 0.76rem;
+            border: 0.025rem solid #fb343e;
+            border-radius: 50px;
+            color: #fb343e;
+            margin: 0.32rem auto;
+        }
+    }
+
+    .g-alert {
+        .g-standard{
+            .g-kaihu{
+                width: 70px;
+                height: 71px;
+                background-image: url('../../../image/icon/tixian_yuan.png');
+            }
+        }
+        .g-desc{
+
+        }
+        .desc-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                flex:1;
+                padding-left: 30px;
+                text-align: right;
+            }
+            p{
+                flex:1;
+                text-align: left;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+}

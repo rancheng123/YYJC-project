@@ -1,0 +1,36 @@
+.rule-wrap{
+    padding: 40px 20px;
+    font-size: 24px;
+    color: #3d4145;
+    .color-red{
+        color: red;
+    }
+    .rule-list{
+        li{
+            padding: 10px;
+            line-height: 40px;
+        }
+    }
+    .rule-table{
+        width: 100%;
+        margin-top: 20px;
+        border: 2.5px solid #ccc;
+
+        th{
+            width: 25%;
+            border: 2.5px solid #ccc;
+            padding:10px 0px;
+            font-weight: bold;
+            text-align: center;
+        }
+        th:first-child{
+
+        }
+        td{
+            height: 40px;
+            padding:10px 0px;
+            border: 2.5px solid #ccc;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.receivables{
+    background: #fff;
+  
+  .bankReceivables{
+    .bankBingdImg{
+      width: 750px;
+      height: 180px;
+      overflow: hidden;
+    }
+    .inputItem{
+      border-bottom: 2px solid #eee;
+    }
+    .label{
+      width: 25%;
+      font-size: 30px;
+    }
+    .prompt{
+      font-size:20px;
+      color:#999;
+      padding-left: 30px;
+      padding-top:20px;
+    }
+    .flex-child1{
+      font-size: 28px;
+    }
+    .inputItem .code{
+        width: 70%;
+      }
+    .getCode{
+      font-size:28px;
+      color:#fb343e;
+    }
+
+    .validCode{
+      width: 155px;
+      height: 56px;
+      display: inline-block;
+      margin-top: 17px;
+    }
+
+    .pR30{
+      padding-right: 30px;
+    }
+
+    .btn-getMsgCode{
+      color: #fb343e;
+      width: 208px;
+    }
+    .vertical-line{
+      margin: 0px 38px;
+    }
+    .btn_bankList{
+      width: 300px;
+      padding:15px 0;
+      text-align: center;
+      margin:20px auto;
+
+    }
+    .look-bankList{
+      margin: 10px auto;
+      padding: 30px 0px;
+      text-align: center;
+      color: #0993de;
+    }
+    .inputCodeText{
+      width: 60%;
+    }
+  }
+  .btn_bankList{
+      a{
+        color:#348dfb;
+      }
+      
+  }
+  .bankNotes{
+    font-size: 16px;
+    color:#999;
+    padding:15px 25px;
+    line-height: 35px;
+  }
+  .bnt-red{
+    border-radius:20px;
+  }
+}

@@ -1,0 +1,382 @@
+.information{
+    background: #ff432c;
+    padding:40px 0;
+    position:relative;
+    margin-bottom: 20px;
+        .top{
+            padding-bottom: 25px;
+            font-size:40px;
+            ul{
+            display: flex;
+            li{
+                flex:1;
+                text-align: center;
+                font-size:40px;
+                color:#fff;
+            }
+        }
+    }
+    ul{
+        display: flex;
+
+        li{
+            flex:1;
+            text-align: center;
+            font-size:24px;
+            color:#fff;
+        }
+    }
+    .right_border1{
+        position: absolute;
+        top:25%;
+        height: 40px;
+        left:33.3%;
+        img{
+            width: 100%;
+        }
+    }
+    .right_border2{
+        position: absolute;
+        top:25%;
+        left:66.666%;
+        height: 40px;
+        img{
+            width: 100%;
+        }
+    }
+
+
+}
+.InvestmentMoney{
+    text-align: center;
+    background: #fff;
+    padding:35px 0;
+    margin-bottom: 20px;
+        h4{
+            font-size: 26px;
+        }
+        .money{
+            height: 130px;
+            line-height: 130px;
+            button{
+                width:60px;
+                line-height: 60px;
+                height: 60px;
+                border: 0;
+                font-size: 45px;
+                color: #ff432c;
+                padding:0;
+                text-align: center;
+                background: #f1f1f1;
+                border-radius: 5px;
+            }
+            input{
+                margin:0 20px;
+                height: 60px;
+                border: 0;
+                border-bottom:2.5px solid #ccc;
+                color:#ff432c;
+                text-align: center;
+                font-size: 36px;
+                width: 65%;
+                padding:20px 0;
+                border-radius: 0;
+            }
+        }
+}
+.profit{
+    background: #fff;
+    .list{
+        height:100px;
+        padding:0 0 0 30px;
+        display: flex;
+            i{
+                display: inline-block;
+                width: 16px;
+                height:26px;
+                vertical-align: middle;
+                margin-bottom: 5px;
+            }
+            a{
+                display: inline-block;
+                font-size:26px;
+                color:#ff7404;
+                // margin-right: 10px;
+                vertical-align: middle;
+                margin-bottom: 8px;
+                .couponImg{
+                    display: inline-block;
+                    width: 22px;
+                    height: 24px;
+                    vertical-align: middle;
+                    margin-top: -2px;
+                    margin-right: 5px;
+                }
+
+            }
+            .list_left{
+                width: 10%;
+                .img{
+                    width:40px;
+                    height:40px;
+                    margin:30px auto;
+                }
+            }
+            .list_right{
+                flex:2;
+                height: 98px;
+                border-bottom: 2.5px solid #ccc;
+                display: flex;
+                .list_text{
+                    flex:1;
+                    height:40px;
+                    line-height: 40px;
+                    margin-top:35px;
+                    padding-left: 0.1rem;
+                }
+                .list_btn{
+                    flex:1;
+                    margin-top:30px;
+                    text-align: right;
+                    margin-right: 30px;
+                    display: inline-block;
+                    button{
+                        width: 40px;
+                        background: #fff;
+                        border: 0;
+                        width: 150px;
+                        text-align: center;
+                        border: 2.5px solid #fb3a43;
+                        color:#fb3a43;
+                        border-radius:30px;
+                        line-height: 46px;
+                        margin-bottom: 3px;
+                    }
+                    a{
+                        display: inline-block;
+                        margin:0 10px;
+                        margin-bottom: 8px;
+                    }
+                }
+                .bankLogo{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    // background: #999;
+                    vertical-align: middle;
+                    border-radius: 50%;
+                    margin-bottom: 3px;
+                }
+            }
+    }
+    li:last-child .list_right{
+        border:0;
+    }
+}
+.paymentMoney{
+    font-size: 32px;
+    text-align: right;
+    margin:30px;
+}
+.clause{
+    display: flex;
+    padding:0 50px 130px 50px;
+    font-size:20px;
+    color:#999;
+        input{
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-bottom: -5px;
+            margin-right: 20px;
+        }
+        .clauseText{
+            flex:2;
+            font-size: 30px;
+            line-height: 35px;
+        }
+}
+.placeOrder_false{
+    width: 100%;
+    background: #ccc;
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 36px;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+.placeOrder_true{
+    width: 100%;
+    background: #fb343e;
+    height:100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 36px;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index: 3;
+}
+
+//优惠券
+.couponMotail{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,.2);
+    z-index: 101;
+}
+.coupon{
+    width: 100%;
+
+    background: #fff;
+    position: fixed;
+    left:0;
+    bottom:0;
+    padding-bottom: 20px;
+    z-index: 102;
+    .coupon_text{
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+    >ul{
+        max-height: 750px;
+        overflow: auto;
+         -webkit-overflow-scrolling: touch;
+    }
+
+        h4{
+            text-align: center;
+            line-height: 98px;
+            height:98px;
+            border-bottom: 2.5px solid #eee;
+        }
+        .couponList{
+            display: flex;
+            margin:0 30px;
+            font-size: 28px;
+            line-height: 98px;
+            border-bottom: 2.5px solid #eee;
+            
+                .couponName{
+                    flex:2;
+                    span{
+                        color:#ff7404;
+                        font-size: 24px;
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                    .bankLogo{
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            // background: #999;
+                            vertical-align: middle;
+                            border-radius: 50%;
+                            margin-bottom: 5px;
+                            margin-right: 20px;
+                    }
+                    .moRen{
+                        display: inline-block;
+                        color:#fff;
+                        font-size: 18px;
+                        height: 26px;
+                        line-height: 26px;
+                        margin-left: 0;
+                        width: 50px;
+                        vertical-align: middle;
+                        margin-bottom: 1px;
+                        background: #fb343e;
+                        text-align: center;
+                        border-radius: 5px;
+                        padding:2px 8px;
+                    }
+                }
+                .couponInput{
+                    width: 39px;
+                    height: 39px;
+                    margin-top:28.5px;
+                    display: none; 
+                    .selectNo{
+                        width: 30px;
+                        height:30px;
+                        border-radius: 50%;
+                        border: 2.5px solid #999;
+                    }
+                    .selectOk{
+                        width: 43px;
+                        height:43px;
+                        
+                    }
+                }
+        }
+        .close{
+            position: absolute;
+            top:35px;
+            left:3%;
+            width: 28px;
+            height:28px;
+        }
+        .goBangDingBank{
+            position: absolute;
+            left:79%;
+            top:35px;
+            width: 200px;
+            a{
+                font-size: 28px;
+            }
+        }
+}
+.information_password{
+    .bankPassword{
+        background: #fff;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width: 100%;
+        z-index: 102;
+        .bankInput{
+            padding:0 30px;
+        }
+        li:first-child{
+            font-size:30px;
+            text-align: center;
+            line-height: 98px;
+            height:100px;
+            border-bottom: 2.5px solid #ccc;
+            margin-bottom: 30px;
+        }
+        li:nth-child(2){
+            font-size:26px;
+            color:#999;
+            padding-left: 30px;
+            line-height: 100px;
+            height: 100px;
+        }
+        li:last-child{
+            font-size: 30px;
+            color:#fb343e;
+            text-align: right;
+            margin-right: 30px;
+            line-height: 80px;
+            height: 80px;
+            padding-bottom: 50px;
+        }
+        .close{
+            position: absolute;
+            top:35px;
+            left:90%;
+            width: 28px;
+            height:28px;
+        }
+    }
+
+}

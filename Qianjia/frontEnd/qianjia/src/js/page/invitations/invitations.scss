@@ -1,0 +1,261 @@
+    .Invitation_content{
+        background:#fff;
+          .banner{
+            width: 100%;
+            height:359px;
+            overflow: hidden;
+            img{
+              width: 100%;
+              height:100%;
+            }
+          }
+          .progress ul{
+            height:145px;
+            display: flex;
+            background: #fff;
+            border-bottom: 2px solid #ccc;
+              li{
+                height: 125px;
+                margin:10px 0;
+                border-right: 2px solid #dcdcdc;
+                flex: 1;
+                  .proList{
+                    text-align: center;
+                    padding:25px 0;
+                      h4{
+                        margin-bottom:10px;
+                        font-weight: bold;
+                      }
+                      strong{
+                        color:#fb3a43;
+                        display: inline-block;
+                        margin-right: 5px;
+                      }
+                      span{
+                        font-size: 24px;
+                        color: #ccc;
+                      }
+                  }
+                  .button_fail{
+                    border: 0;
+                    width: 165px;
+                    height:53px;
+                    background: #fff;
+                    outline:none;
+                    color:#999;
+                    border:2px solid #999;
+                    border-radius:10px;
+                    font-size: 24px;
+                    font-weight: normal;
+                    margin:36px 0;
+                  }
+                  .button_ok{
+                    border: 0;
+                    width: 165px;
+                    height:53px;
+                    background: #fff;
+                    outline:none;
+                    color:#fb3a43;
+                    border:2px solid #fb3a43;
+                    border-radius:10px;
+                    font-size: 24px;
+                    font-weight: normal;
+                    margin:36px 0;
+                  }
+              }
+              li:last-child{
+                border: 0;
+                text-align: center;
+              }
+          }
+          .Invitationperson{
+            height: 284px;
+            position: relative;
+            background:url('../../../image/img/yq_bg.png') no-repeat center;
+            border-bottom: 2px solid #ccc;
+            background-size: 100%;
+            border-top: 1px solid #f5f5f5;
+              .Invitation_text{
+                text-align: center;
+                font-weight: bold;
+                padding-top:70px;
+                  span{
+                    display: inline-block;
+                    padding:0 5px;
+                    border-bottom: 2px solid #fb3a43;
+                    color:#fb3a43;
+                  }
+              }
+              .button{
+                width: 90%;
+                height: 90px;
+                line-height: 90px;
+                margin:40px auto 0;
+
+                button{
+                  background: #fb3a43;
+                  border: 0;
+                  color:#fff;
+                  border-radius:20px;
+                }
+              }
+          }
+            .InvitationpersonA{
+            height: 0;
+            position: relative;
+            background:0;
+            border-bottom: 0;
+            background-size: 100%;
+            border-top: 0;
+              .Invitation_text{
+                text-align: center;
+                font-weight: bold;
+                padding-top:70px;
+                  span{
+                    display: inline-block;
+                    padding:0 5px;
+                    border-bottom: 2px solid #fb3a43;
+                    color:#fb3a43;
+                  }
+              }
+              .button{
+                width: 90%;
+                height: 90px;
+                line-height: 90px;
+                margin:40px auto 0;
+
+                button{
+                  background: #fb3a43;
+                  border: 0;
+                  color:#fff;
+                  border-radius:20px;
+                }
+              }
+          }
+          .bottom{
+
+              .activity_title{
+                text-align: center;
+                line-height: 80px;
+                height:80px;
+                font-size:28px;
+                font-weight: bold;
+                background: #fff;
+              }
+              .activity_list{
+                background: #fff;
+                  .hb{
+                    margin-bottom: 30px;
+                  }
+              }
+              ul{
+                  margin:0 30px;
+              }
+              li{
+                display: flex;
+                  div:first-child{
+                    width: 5px;
+                    height: 25px;
+                    background: #585757;
+                    margin-right: 15px;
+                    margin-top:3px;
+                  }
+                  div:last-child{
+                      flex: 1;
+                      line-height: 35px;
+                      font-size: 25px;
+                      height: 35px;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                  }
+              }
+              .more{
+                text-align: center;
+                padding: 20px 0;
+                font-size: 25px;
+                span{
+                  display: inline-block;
+                  width: 16px;
+                  height:8px;
+                  vertical-align: middle;
+                  margin-left: 10px;
+                }
+              }
+          }
+          .-mob-share-ui-button{
+                background: #fb3a43;
+                width: 500px;
+                padding: 30px;
+                border-radius: 50px;
+                margin: 30px auto auto;
+          }
+          .noActivity{
+                background: #fb3a43;
+                width: 500px;
+                padding: 30px;
+                border-radius: 50px;
+                margin: 0;
+                margin: 100px auto;
+          }
+
+    }
+.-mob-share-ui{
+      top: 0;
+      padding:25px;
+      .-mob-share-list{
+        margin:100px 25px !important;
+      }
+      ul.-mob-share-ui ul.-mob-share-list li{
+          height: 60px !important;
+          width: 60px !important;
+      } 
+}
+.yq_motail{
+  h5{
+    text-align: center;
+    color: #fe7776;
+    font-size: 32px;
+    padding-bottom: 5px;
+  }
+  .yq_motail{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .2;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 101;
+  }
+  .yq_zp{
+    width:522px ;
+    height:606px;
+    position: fixed;
+    top: 265px;
+    left: 114px;
+    z-index: 102;
+  }
+  .btn_close_yq{
+    width: 74px;
+    height: 74px;
+    position: fixed;
+    top: 1000px;
+    left: 338px;
+    z-index: 102;
+  }
+  .detailList{
+    position: absolute;
+    width: 470px;
+    top:39%;
+    padding: 0 0.25rem
+  }
+  ul{
+      max-height: 3rem;
+      overflow: auto;
+  }
+  li{
+    padding:5px 0;
+    font-size: 26px;
+  }
+}

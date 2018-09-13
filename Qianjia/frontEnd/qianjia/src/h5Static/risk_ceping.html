@@ -1,0 +1,429 @@
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>风险测评</title>
+	<script src="./js/zepto.min.js"></script>
+	<script src="./js/config.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <script type="text/javascript" chartset="UTF-8">
+        $(document).ready(function(){
+			$('#backId').click(function(){
+				window.history.back();
+			})
+		})
+    </script>
+	<link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+		html,body{
+			height:100%;
+			width:100%;
+            margin:0;
+            padding:0;
+			font-size:20px !important;
+		}
+		.content{
+			min-height:100%;
+			width:100%;
+			background:url(/h5Static/images/wqdc_bg.png)no-repeat center;
+			padding-top:2rem;
+		}
+		.person{
+			width: 7.675rem;
+			height: 4.35rem;
+			margin: 0 auto;
+			background: url(/h5Static/images/opne_person.png)no-repeat;
+			background-size: 100% 100%;
+			margin-top: 0.75rem;
+			margin-bottom: -0.2rem;
+		}
+		.open{
+			width:18.1rem;
+            height: 18rem;
+			background:url(/h5Static/images/open_text_bg.png)no-repeat;
+			background-size:100% 100%;
+			/* border-top:1px solid #e75135; */
+			margin:0 auto;
+			margin-top: 0;
+		}
+		.introduce{
+		    font-size:0.75rem;
+			width: 100%;
+		}
+		.contentText{
+			padding-top: 1.2rem;
+			width: 13rem;
+			margin: 0 auto;
+			/* padding: 1.2rem 0; */
+			padding-top: 2rem;
+			padding-bottom: 0.5rem;
+		}
+		.introduce ul{
+			width:100%;
+			font-size:16px;
+			margin-top:10px;
+		}
+		.introduce ul li{
+			 display: -webkit-flex;
+    		 display: flex;
+    		 margin-bottom:0.5rem;
+		}
+		.introduce ul li:after{
+			content:'';
+			display:block;
+			clear:both;
+			visibility:hidden;
+		}
+		.introduce li div:first-child{
+			float: left;
+			width: 1rem;
+			height: 1rem;
+			line-height: 1rem;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			font-size: 0.75rem;
+		}
+		.introduce li div:last-child{
+			/* margin-left: 0.5rem; */
+			font-size: 0.7rem;
+			/* flex: 1; */
+			width: 80%;
+			margin-left: 0.5rem;
+			line-height: 1rem;
+
+		}
+		.introduce ul li .current{
+			border:1px solid #e75135;
+			background:#e75135;
+			color:#fff;
+		}
+		.btn_submit{
+			height: 2rem;
+			line-height: 2rem;
+			width: 6.25rem;
+            text-align: center;
+            /* bottom: 50px; */
+            margin: 0 auto;
+            background: #fbc527;
+            color: #fff;
+            font-size: 0.75rem;
+             border-radius: 1.5rem;
+		}
+
+		.introduce{
+            display:none;
+        }
+        .introduce:first-child{
+            display:block;
+        }
+
+		.btn_open{
+            line-height:2.125rem;
+            color:#fff;
+        }
+        .btn_open div:first-child{
+            width: 3.5rem;
+			/* height: 26px; */
+			float: left;
+			/* background-size: 100%; */
+			margin-left: 15%;
+			font-size: 0.75rem;
+			margin-top: 1rem;
+
+        }
+        .btn_open div:last-child{
+           width: 3rem;
+			float: right;
+			margin-right: 15%;
+			text-align: right;
+			font-size: 0.75rem;
+			margin-top: 1rem;
+        }
+        .btn_open:after{
+            content:'';
+            display:block;
+            clear:both;
+            visibility:hidden;
+        }
+
+
+	</style>
+</head>
+<body>
+
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page" style="background:#ebebeb;">
+    	<!--<c:if test="${isWap=='YES'}">-->
+            <header class="bar bar-nav isWap" id="backId">
+                    <a class="icon icon-left" ></a>
+                    风险测评
+            </header>
+        <!--</c:if>-->
+		<div class="content lys_content_remove paddingTop" >
+			<div class="person"></div>
+            <div class="open">
+            	<div class="contentText">
+            	</div>
+            </div>
+            <div class="btn_open">
+                <div class="left btn" style="display:none;" id = "preQuestion">上一题</div>
+                <div class="right">1/<span id="totalNum"></span></div>
+            </div>
+            <div class="btn_submit" style="display:none;">提交</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" chartset="UTF-8">
+//$.init();
+var questionSize = 0;
+var myToken;
+$(document).ready(function(){
+	//获取用户信息token
+	var myToken;
+	console.log(myToken);
+	$('#backId').click(function(){
+		window.history.back();
+	})
+	function getUrlParam(name){
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+		var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+		if (r!=null) return unescape(r[2]); return null; //返回参数值
+    }
+	var isWap = getUrlParam('isWap');
+	if(isWap){
+		$('.isWap').css('display','none');
+		$('.lys_content_remove').removeClass('paddingTop')
+		$('.content').css('paddingTop','0.5rem');
+		myToken = getUrlParam('token');
+		//alert('浏览器token:'+myToken);
+		//alert('王俊token初次判断');
+	}else{
+		$('.isWap').css('display','block');
+		myToken = JSON.parse(window.localStorage.getItem('user')).token;
+		//alert('李token初次判断');
+	}
+
+
+  //题目逻辑
+	var x=-1;y=0;
+    function sign(a,b){
+        $('[sign="sign'+a+'"]').css('display','none');
+        $('[sign="sign'+b+'"]').css('display','block');
+    }
+    function unSign(a,b){
+         $('[sign="sign'+(b)+'"]').css('display','none');
+        $('[sign="sign'+a+'"]').css('display','block');
+    }
+	//接收浏览器参数
+	function getUrlParam(name)
+	{
+	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+	if (r!=null) return unescape(r[2]); return null; //返回参数值
+	}
+	// getUrlParam('token');
+	// console.log('token:::::',getUrlParam('token'));
+	// $.ajax({
+	// 	url:'http://192.168.0.44:8083/qj-front-api//qj/front/v1/my/getRiskTestQuestionList',
+	// 	type: 'post',
+	// 	data: JSON.stringify({}),
+	// 	dataType: 'json',
+	// 	contentType:"application/json",
+	// 	success: function(data){
+	// 		console.log(data.data)
+	// 	}
+	// })
+	console.log('端口号：',config.api)
+	$.ajax({
+		type : "post",
+		//url : "${ctxWeb}/wap/ajaxuser/getMemberMessageList",
+		url : config.api+"/qj/front/v1/my/getRiskTestQuestionList",
+		cache : false,
+		dataType : "json",
+		contentType:"application/json",
+		headers: {
+			"qpToken":myToken
+		},
+		data: JSON.stringify({}),
+		success : function(resMap) {
+			//$("#productListId ul").empty();
+			//console.log('数据：',resMap);
+			if(resMap.resultCode == '0'){
+				var allQuestionStr = "";
+				$.each(resMap.data,function(i,obj){
+
+					questionSize = questionSize + 1;
+
+					var questionStr = '<div class="introduce" data-value="" sign="sign'+i+'">';
+					questionStr = questionStr + "<h4>" + obj.riskTestQuestion.title + "</h4>";
+					questionStr = questionStr + "<ul>";
+					var riskTestQuestionItemList = obj.riskTestQuestionItemList;
+					$.each(riskTestQuestionItemList,function(i,obj1) {
+						questionStr = questionStr + '<li><div class="answer" data-value="' + obj1.itemScore + '">'+obj1.recordOrder+'</div><div data-value="'+obj1.itemScore+'">'+obj1.title+'</div></li>';
+					});
+					questionStr = questionStr + "</ul>";
+					questionStr = questionStr + "</div>";
+					allQuestionStr = allQuestionStr + questionStr;
+				});
+
+
+				$(".contentText").html(allQuestionStr);
+				$("#totalNum").html(questionSize);
+					//修改
+					var trg=false;
+					$('.introduce li .answer').click(function(e){
+						if(trg){
+							return false;
+						}
+						trg=true;
+						var childVal = $(e.target).attr('data-value');
+						//console.log(childVal);
+						$(this).addClass('current');
+						$(e.target).parents('.introduce').attr('data-value',childVal);
+						$(this).parent('li').siblings().children('.answer').removeClass('current');
+						//console.log($(this).attr('class').substring(7)=='current');
+						if($(this).attr('class').substring(7)=='current'){
+							setTimeout(function(){
+									trg=false;
+									if(x>=questionSize-2){
+											$(".btn_submit").css("display","block");
+											//alert('这是最后一道题！')
+											return false;
+										}
+										x+=1;
+										y+=1;
+										sign(x,y);
+										//console.log(y+1);
+
+
+										if (y >= 0) {
+											$('#preQuestion').css('display','block');
+										}
+
+										var progress=(y+1)+'/' + questionSize;
+										$('.btn_open .right').html(progress);
+										
+								
+							},500)
+						}
+					});
+
+				$('.btn_submit').click(function(){
+					var inputs=$('.introduce').length;
+					var vl;
+					var state=true;
+					var score = 0;
+					$('.introduce').each(function(){
+						vl=$(this).attr('data-value');
+						if(vl == undefined || vl == ''){
+							alert('您有未答完的题！');
+							state=true;
+							return false;
+						}else{
+							state=false;
+						}
+					})
+
+					if(!state){
+						$('.introduce').each(function(){
+							vl=$(this).attr('data-value');
+							//console.log('vl：',$(this).attr('data-value'));
+							score = score + parseInt(vl);
+						})
+						//console.log('分数：',score)
+						var jsonObj1 = {};
+						jsonObj1["score"]=score;
+						//console.log(jsonObj1["score"]);
+						//console.log('token值：',getUrlParam('token'));
+						$.ajax({
+							type : "POST",
+							url :  config.api+"/qj/front/v1/my/updateRiskTestScore",
+							cache : false,
+							dataType : "json",
+							contentType:"application/json",
+							headers: {
+								"qpToken":myToken
+							},
+							data : JSON.stringify(jsonObj1),
+							success : function(resMap) {
+								//console.log('第二个：',resMap);
+								if(resMap.resultCode==0){
+									//alert('暂停一下');
+									console.log('提交');
+									location.href="/h5Static/risk_agin.html?token="+myToken;
+								}else if(resMap.resultCode == '20001'){
+									//console.log(resMap.resultMsg);
+									//alert(resMap.resultMsg)
+									//alert('提交时的判断token');
+									location.href='/login';									
+								}
+							},
+							error : function() {
+								alert('fail!');
+								//errorLoading();
+							}
+						});
+
+					}
+				});
+
+
+				$('.btn_open .btn').click(function(){
+			        console.log('您点击了上一题：');
+			        //console.log(x);
+			        //console.log(y);
+
+			        //$(".btn_submit").css("display","none");
+
+			        if(x<=0){
+			        	$('#preQuestion').css('display','none');
+			        }
+
+			        if(x<=-1){
+			            //alert('这已经是第一道题了');
+			            return false;
+			        } else {
+			        	var progress=(x+1)+'/' + questionSize;
+				        $('.btn_open .right').html(progress)
+			        }
+			        unSign(x,y);
+			        x-=1;
+			        y-=1;
+			    })
+				console.log('题型部署完毕');
+			}else if(resMap.resultCode == '20001'){
+				//console.log(resMap.resultMsg);
+				//alert(resMap.resultMsg);
+				location.href='/login';
+			}
+		},
+		error : function() {
+			//alert('fail!');
+			//errorLoading();
+		}
+	});
+ 
+});
+</script>
+
+</body>
+</html>

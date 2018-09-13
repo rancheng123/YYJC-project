@@ -1,0 +1,53 @@
+.consumptionInfo-wrap{
+    background: #ffffff;
+    .g-bill-detail{
+        padding: 0px 0px 0px 36px;
+    }
+    .g-d-list{
+        padding: 0px;
+    }
+    .g-d-list:first-child{
+        li{
+            height: 128px;
+            h4{
+                font-size: 30px;
+            }
+            p{
+                color: #dd4124;
+                font-size: 50px;
+                padding-right: 30px;
+                b{
+                    font-size: 30px;
+                    padding-right: 0px;
+                }
+            }
+        }
+        
+    }
+    .g-d-list:last-child{
+        border-bottom: none;
+        padding: 22px 0px;
+        li{
+            align-items:flex-start;
+            font-size: 26px;
+            color: #999999;
+            // line-height: 58px;
+            h4{
+                line-height: 36px;
+                padding: 11px 0px;
+            }
+            p{
+                line-height: 36px;
+                padding: 11px 0px;
+            }
+            div{
+                width: 500px;
+                padding-right: 30px;
+                text-align: right;
+            }
+           
+        }
+        
+        
+    }
+}

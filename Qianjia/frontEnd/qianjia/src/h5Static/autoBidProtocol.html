@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>钱夹自动投标服务协议</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <style>
+        html{
+           margin:0;
+            padding:0;
+			font-size:20px !important;
+        }
+
+        .paddingTop{
+            padding-top:2.5rem;
+        }
+        .autoBidProtocol{font-size: 0.5rem;padding: 0.2rem 0.3rem 1rem 0.3rem;}
+        .autoBidProtocol h1{font-size: 1rem;text-align: center;font-weight: normal;padding: 0.5rem 0px 0.2rem 0px;}
+        .autoBidProtocol h2{font-size: 0.75rem;font-weight: normal;}
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page">
+	    <!--<c:if test="${isWap == 'true'}">-->
+	        <header class="bar bar-nav isWap">
+                <a class="icon icon-left" id="backId"></a>
+                钱夹自动投标服务协议
+            </header>
+		<!--</c:if>-->
+		<div class="content">
+            <div class="lys_content_remove paddingTop">
+                <div class="autoBidProtocol">
+                    <h1>第一章 基础说明</h1>
+                    <h2>第1条：</h2>
+                    <p>北京昂道网络科技有限公司（简称“昂道网络”）依据本协议的规定在钱夹网站（昂道网络运营的提供专业网络借贷交易居间服务的中介平台；网址：www.qianjialicai.com，简称“钱夹”）上为钱夹出借人（简称“出借人”）提供自动投标服务。本协议在出借人和昂道网络间具有法律效力。</p>
+                    <h2>第2条：</h2>
+                    <p>钱夹建议您认真阅读本协议，并在充分理解各条款内容后再选择是否接受本协议。除非您接受本协议所有条款，否则无权使用钱夹于本协议项下所提供的自动投标服务。您一经选定自动投标服务即视为完全接受本协议全部条款。</p>
+                    <h1>第二章 自动投标服务说明</h1>
+                    <h2>第3条：</h2>
+                    <p>本协议中的“投标”即为“出借”之意。</p>
+                    <h2>第4条：</h2>
+                    <p>自动投标服务是昂道网络为了方便出借人而提供的一个智能投标委托代理工具。</p>
+                    <h2>第5条：</h2>
+                    <p>自动投标的对象为钱夹平台上的所有标的。出借人启用自动投标服务，即视为同意并接受钱夹《钱夹网络借贷居间服务协议》及其他相关限定。</p>
+                    <h2>第6条：</h2>
+                    <p>启用自动投标服务，出借人可以设定投标方案。昂道网络会根据出借人设定的方案筛选合适的标的进行自动出借。</p>
+                    <h2>第7条：</h2>
+                    <p>出借人在此不可撤销的授权昂道网络、昂道网络也同时接受其授权代出借人通过钱夹的自动投标服务将出借人的账户余额进行投标。钱夹的投标行为等同于出借人的自行投标，交易中产生的任何损失由出借人自行承担。</p>
+                    <h2>第8条：</h2>
+                    <p>出借人应知悉自动投标服务无法保证不错过任何满足其定制条件的标的。由此产生的损失，昂道网络不承担任何责任。</p>
+                    <h1>第三章 其他说明</h1>
+                    <h2>第9条：</h2>
+                    <p>昂道网络拥有对本协议的修改权及最终解释权。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+
+
+</body>
+</html>

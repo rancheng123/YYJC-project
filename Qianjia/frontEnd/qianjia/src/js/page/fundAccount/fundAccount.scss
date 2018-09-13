@@ -1,0 +1,78 @@
+.fundAccount-wrap{
+    background-color: #fff;
+    .f-date{
+        font-size: 28px;
+        height: 72px;
+        line-height: 72px;
+        padding: 0px 30px;
+        background-color: #f0f0f0;
+    }
+    .f-list{
+        padding-left: 30px;
+        li{
+            height: 150px;
+            border-bottom: 2.5px solid #dddddd;
+        }
+        .f-icon{
+            float: left;
+            width: 90px;
+            height: 90px;
+            margin: 30px 0px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .f-chongzhi{
+            background-image: url(../../../image/icon/fundAccount1.png);
+        }
+        .f-tixian{
+            background-image: url(../../../image/icon/fundAccount2.png);
+        }
+        .f-zeroBuy{
+            background-image: url(../../../image/icon/fundAccount3.png);
+        }
+        .f-text{
+            float: left;
+            width: 280px;
+            margin: 34px 0px 34px 30px;
+            overflow: hidden;
+            h5{
+                font-size: 32px;
+                width: 100%;
+                height: 52px;
+                line-height: 52px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            p{
+                font-size: 24px;
+                width: 100%;
+                height: 28px;
+                line-height: 28px;
+                color: #999999;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        .f-status{
+            float: right;
+            width: 290px;
+            padding-right: 30px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 28px;
+            text-align: right;
+            margin: 50px 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .s-orange{
+            color: #ff7404;
+        }
+        .s-red{
+            color: #f82b37;
+        }
+    }
+}

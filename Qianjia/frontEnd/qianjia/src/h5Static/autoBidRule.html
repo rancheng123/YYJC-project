@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>规则说明</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <style>
+        html{
+           margin:0;
+            padding:0;
+			font-size:20px !important;
+        }
+
+        .paddingTop{
+            padding-top:2.5rem;
+        }
+        .autoBidRule{font-size: 0.5rem;padding: 0.2rem 0.3rem 1rem 0.3rem;}
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page">
+	    <!--<c:if test="${isWap == 'true'}">-->
+	        <header class="bar bar-nav isWap">
+                <a class="icon icon-left" id="backId"></a>
+                规则说明
+            </header>
+		<!--</c:if>-->
+		<div class="content">
+            <div class="lys_content_remove paddingTop">
+                <div class="autoBidRule">
+                    <p>1. 所有注册用户均可使用自动投标（即可用余额为0也可开启）；</p>
+                    <p>2. 开启自动投标前需开通陕坝农商银行存管账户、绑定银行卡；</p>
+                    <p>3. 投资人可选择按固定金额（100的整倍数）设置自动投标金额；</p>
+                    <p>4. 每个用户最多设置3条自动投标条件；</p>
+                    <p>5. 自动投标设置开启成功后，将立即生效；</p>
+                    <p>6. 所有自动投标用户以开启自动投标设置的时间先后顺序进行排队；</p>
+                    <p>7. 修改自动投标设置条件不会影响当前排位；</p>
+                    <p>8. 一旦自动投标成功，将重新开始排序；</p>
+                    <p>9. 排序轮到时（符合当前标的自动条件），但可用余额不足，不保留排位，需重新排队；</p>
+                    <p>10.自动排队期间，如关闭自动投标再重新启用，则重新排队（即从当前末位排起）；</p>
+                    <p>11.单个标的自动投标限投一次；</p>
+                    <p>12.每个标的预留给自动投标的份额有限，请知悉。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+
+
+</body>
+</html>

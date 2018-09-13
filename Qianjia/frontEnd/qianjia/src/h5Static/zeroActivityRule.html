@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>活动规则</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        //动态计算根元素的font-size
+        (function(){
+            function setFontSize(){
+                document.documentElement.style.fontSize = 20*document.documentElement.clientWidth/375+'px';
+            }
+            setFontSize();
+            window.onload = window.onresize = function(){
+                setFontSize();
+            }
+          })();
+    </script>
+    <style>
+        html,body{margin:0;padding:0;background: #ffffff;}
+
+        .paddingTop{padding-top:2.5rem;}
+        .activityRule{font-size: 0.65rem;color: #666666;padding-top: 1.7rem;}
+        
+        .activityIcon{text-align: center;vertical-align: top;}
+        .activityIcon i{display: inline-block;width: 3.25rem;height: 3.25rem;margin: 0rem 1.875rem;background-repeat: no-repeat;background-size: 100% 100%;}
+        .qianjia{background-image: url("./images/zeroQianjia.png");}
+        .bige{background-image: url("./images/zeroBige.png");}
+
+        .rule-box{padding: 1rem 0rem 2rem 0rem;}
+
+        .rule-box .rule_text{
+            line-height: 1.15rem;
+            padding: 0.5rem 1.5rem;
+            margin: 0px;
+        }
+
+        .record-title {
+            text-align: center;
+            padding: 0.5rem 0px 0.1rem 0px;
+        }
+        .record-con{
+            display: inline-block;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            font-size: 0.8rem;
+            text-align: center;
+            margin: 0 auto 0.54rem auto;
+            position: relative;
+            color: #333333;
+            vertical-align: top;
+        }
+        .record-title .t-line {
+            width: 4rem;
+            height: 0.06rem;
+            background: #dddddd;
+            position: absolute;
+            top: 0.675rem;
+        }
+        
+        .record-title .t-line:after {
+            content: '';
+            width: 0.17rem;
+            height: 0.17rem;
+            background: #333333;
+            position: absolute;
+            top: -0.03rem;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        .record-title .t-l1 {
+            left: -4.8rem;
+        }
+        .record-title .t-l2 {
+            right: -4.8rem;
+        }
+        .record-title .t-l1:after {
+            right: -0.26rem;
+        }
+        .record-title .t-l2:after {
+            left: -0.26rem;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page">
+	    <!--<c:if test="${isWap == 'true'}">-->
+	        <header class="bar bar-nav isWap">
+                <a class="icon icon-left" id="backId"></a>
+                活动规则
+            </header>
+		<!--</c:if>-->
+		<div class="content">
+            <div class="lys_content_remove paddingTop">
+                <div class="activityRule">
+                    
+                    <div class="activityIcon">
+                        <i class="qianjia"></i>
+                        <i class="bige"></i>
+                    </div>
+                    <div class="rule-box">
+                        <div class="record-title">
+                            <div class="record-con">
+                                0元购活动规则
+                                <span class="t-line t-l1"></span>
+                                <span class="t-line t-l2"></span>
+                            </div>
+                        </div>
+                        <p class="rule_text">1.本次活动由哔咯返现和钱夹联合举办，用户需下载哔咯返现APP参加，在活动商家使用哔咯返现APP支付可获得激活码。</p>
+                        <p class="rule_text">2.在哔咯返现APP活动页面激活成功后，0元购活动金额将作为一笔投资本金转入钱夹，可在钱夹活动页面进行刚查看；项目期满后会将本金(活动奖金)及产生的收益转入您在钱夹绑定的默认银行卡。</p>
+                        <p class="rule_text">3.在哔咯返现APP成功激活0元购激活码后，用户可在钱夹活动页面追加充值，充值成功后充值金额将作为本金转入钱夹，享受超高年化收益的同时还将获得本金可消费权利及哔咯现金券奖励。</p>
+                        <p class="rule_text">4.活动获得的哔咯现金券需下载哔咯返现APP查看、使用。哔咯现金券不计入投资本金，不计算投资收益，不可提现。</p>
+                        <p class="rule_text">5.为了保证您的活动奖励及时到账，参加0元购活动需完成钱夹实名认证。已激活0元购激活码但未在钱夹进行实名认证，将无法收到活动奖励。</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+
+
+</body>
+</html>

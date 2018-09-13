@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>提现规则</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/rules.css">
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    docEl.style.fontSize = clientWidth / 750 + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+
+    <script type="text/javascript" chartset="UTF-8">
+        $(document).ready(function(){
+            $('#backId').click(function(){
+                window.history.back();
+            })
+        })
+    </script>
+    <style>
+        html{
+           margin:0;
+            padding:0;
+			font-size:20px !important;
+        }
+
+        .paddingTop{
+            padding-top:2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <!-- 你的html代码 -->
+    <div class="page">
+	    <!--<c:if test="${isWap == 'true'}">-->
+	        <header class="bar bar-nav isWap">
+                <a class="icon icon-left" id="backId"></a>
+                提现规则
+            </header>
+		<!--</c:if>-->
+		<div class="content">
+            <div class="lys_content_remove paddingTop">
+                <div class="rule-wrap">
+
+		        	<ol class="rule-list">
+                        <li>1、钱夹用户在提现前需开通陕坝农商银行存管账户并绑定银行卡。</li>
+                        <li>2、为保障用户资金安全，钱夹遵循同卡进出的规则，即使用快捷支付的用户，充值的本金提现时将返回到原支付银行卡。</li>
+                        <li>3、提现产生的手续费需用户自行支付，费用为取现金额的0.5‰ +2 元/笔。</li>
+                        <li>4、禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账号的使用。</li>
+                        <li>5、无特殊情况，提现金额将会在申请提现的当日到账。如有疑问请联系钱夹客服：400·831·6608；客服QQ:3012075246(已达上限)、3582292301、2912791253、2991906364，验证时请提供钱夹注册手机号码。</li>
+                        <li>6、提现限额单笔20万，日累计100万，请知悉。</li>
+					</ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/staticCommon.js"></script>
+
+</body>
+</html>

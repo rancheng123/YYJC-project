@@ -1,0 +1,124 @@
+@import "../../../scss/base/commonVar.scss";
+// 账单详情
+.bill-wrap{
+    min-height: 100%;
+    background-color: #fff;
+
+    .bill-progress{
+        display: flex;
+
+        padding: 18px 52px 110px 52px;
+        .p-show{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: -6px;
+
+        }
+        .p-icon{
+            display: flex;
+            position: relative;
+            z-index: 1;
+        }
+        .i-icon{
+            display: block;
+            width: 36px;
+            height: 36px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .i-yes{
+            background-image: url(../../../image/icon/yes_red.png);
+        }
+        .i-yuan{
+            background-image: url(../../../image/icon/yuan_gray.png);
+        }
+        .p-line{
+            width: 4px;
+            height: 50%;
+            background-color: #acacac;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .p-true{
+            background-color: #f01818;
+        }
+        .p-gray{
+            color: #acacac;
+        }
+        .p-up{
+            top: 0;
+        }
+        .p-down{
+            top: 50%;
+        }
+        .p-list{
+            li{
+                position: relative;
+                padding: 30px 0px 30px 104px;;
+            }
+            .t-title{
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .t-time{
+                font-size: 26px;
+                line-height: 40px;
+                color: #808080;
+            }
+        }
+    }
+}
+
+//提示条
+.tip-bar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    span{
+        padding-left: 22px;
+    }
+}
+.tip-bar.t-close{
+    height: 76px;
+    line-height: 76px;
+    background-color: #a9a9a9;
+}
+.tip-bar.t-red{
+    height: 54px;
+    line-height: 54px;
+    padding:4px 0px 20px 0px;
+    background: #eb3a3f no-repeat left bottom;
+    background-image: url(../../../image/img/tipbarbg.png);
+    background-size: 100% 20px;
+}
+.tip-bar.t-orange{
+    height: 54px;
+    line-height: 54px;
+    padding:4px 0px 20px 0px;
+    background: #fd6f1a no-repeat left bottom;
+    background-image: url(../../../image/img/tipbarbgOrange.png);
+    background-size: 100% 20px;
+}
+.tip-bar.t-addAdress{
+    height: 72px;
+    background-color: #ff7404;
+    .addr-btn{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 0 20px;
+        margin-left: 30px;
+        color: #fff;
+    }
+}

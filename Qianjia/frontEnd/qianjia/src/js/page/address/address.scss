@@ -1,0 +1,13 @@
+.setPassword{
+ // background: #fff;
+}
+.flex-child1{
+    position:relative;
+}
+.adressMessage-box{
+    background: #fff;
+    border-bottom: 2.5px solid #c9c9c9;
+    .inputItem.lastChild{
+        border-bottom: 0px;
+    }
+}
